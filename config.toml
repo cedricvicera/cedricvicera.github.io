@@ -1,4 +1,4 @@
-baseURL = "https://https://cedricvicera.github.io/newwebsite/"
+baseURL = "https://cedricvicera.github.io/newwebsite/"
 themesDir = "themes"
 publishDir = "docs"
 languageCode = "en-us"
