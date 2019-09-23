@@ -1,5 +1,4 @@
-baseURL = "https://cedricvicera.github.io/newwebsite/"
-themesDir = "themes"
+baseURL = "https://www.cedricvicera.com"
 publishDir = "docs"
 languageCode = "en-us"
 title = "Hadi Sinaee"
