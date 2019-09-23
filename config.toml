@@ -1,7 +1,8 @@
 baseURL = "https://www.cedricvicera.com"
+themesDir = "themes"
 publishDir = "docs"
 languageCode = "en-us"
-title = "Hadi Sinaee"
+title = "Cedric Vicera"
 theme = "avicenna"
 googleAnalytics = "UA-1234-6"
 timeout=3000
