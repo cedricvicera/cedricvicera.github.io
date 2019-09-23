@@ -1,5 +1,6 @@
 baseURL = "https://www.cedricvicera.com/"
 themesDir = "themes"
+publishDir = "docs"
 languageCode = "en-us"
 title = "Hadi Sinaee"
 theme = "avicenna"
