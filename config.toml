@@ -1,6 +1,6 @@
 baseURL = "https://www.cedricvicera.com/"
 themesDir = "themes"
-publishDir = "docs"
+publishDir = "cedricvicera.github.io"
 languageCode = "en-us"
 title = "Cedric Vicera"
 theme = "avicenna"
