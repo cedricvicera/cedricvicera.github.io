@@ -13,7 +13,7 @@ instagram_username: cedricvicera
 
 # google_analytics:
 # disqus_shortname:
-
+remote_theme: jekyll-theme-mint
 blog_theme: dark
 
 markdown: kramdown
