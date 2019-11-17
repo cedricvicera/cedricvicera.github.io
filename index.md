@@ -1,7 +1,7 @@
 ---
-#layout: home
+layout: page
 title: Home
-#permalink: /
+permalink: 
 ---
 
 I study Philosophy at the University of Arizona.
