@@ -1,7 +1,6 @@
 ---
 layout: page
 title: Home
-permalink:
 ---
 I study Philosophy at the University of Arizona. I'm primarily interested in philosophy of science. I’m writing an honors thesis advised by [Richard Healey](http://www.u.arizona.edu/~rhealey/).
 
