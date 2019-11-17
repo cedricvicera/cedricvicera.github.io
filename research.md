@@ -4,10 +4,10 @@ title: Research
 permalink: /research/
 ---
 
-## Publications
+# Publications
 
-# Abstracts
+## Abstracts
 
-## Presentations
+# Presentations
 
-# Posters
+## Posters
