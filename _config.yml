@@ -29,6 +29,9 @@ url: "https://www.cedricvicera.com/" # the base hostname & protocol for your sit
 twitter_username: cedricvicera
 github_username:  cedricvicera
 
+# Blog theme
+blog_theme: dark
+
 # Build settings
 theme: jekyll-theme-mint
 plugins:
