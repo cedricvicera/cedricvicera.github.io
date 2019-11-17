@@ -10,3 +10,5 @@ Currently, I’m a research assistant in the [Computational Medicine and Informa
 
 In addition, I’m a head section leader in the [School of Information](https://ischool.arizona.edu/) where I teach introductory Python programming.
 I’m writing an honors thesis advised by [Richard Healey](http://www.u.arizona.edu/~rhealey/).
+
+[comment]: <> (This is a comment, it will not be included)
