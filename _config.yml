@@ -11,8 +11,6 @@ baseurl: ""
 
 date_format: '%b %-d, %Y'
 
-# google_analytics:
-# disqus_shortname:
 remote_theme: jekyll-theme-mint
 blog_theme: dark
 
