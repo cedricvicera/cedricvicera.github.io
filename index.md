@@ -1,6 +1,6 @@
 ---
-layout: page
-title: Home
+layout: post
+#title: Home
 ---
 I study Philosophy at the University of Arizona. Currently, I’m writing an honors thesis advised by [Richard Healey](http://www.u.arizona.edu/~rhealey/).
 
