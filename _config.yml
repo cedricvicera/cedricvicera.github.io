@@ -10,7 +10,7 @@ instagram_username: cedricvicera
 url: "https://www.cedricvicera.com"
 baseurl: ""
 
-# date_format:
+date_format: '%b %-d, %Y'
 
 # google_analytics:
 # disqus_shortname:
