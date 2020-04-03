@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.8.6">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2019-08-07T00:07:12+08:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">Mint</title><subtitle>A blog of Red's research</subtitle><author><name>DR Red</name></author><entry><title type="html">My Test Page</title><link href="http://localhost:4000/2019/08/06/my-test-page.html" rel="alternate" type="text/html" title="My Test Page" /><published>2019-08-06T00:00:00+08:00</published><updated>2019-08-06T00:00:00+08:00</updated><id>http://localhost:4000/2019/08/06/my-test-page</id><content type="html" xml:base="http://localhost:4000/2019/08/06/my-test-page.html">&lt;p&gt;A  post to test Syntax :)&lt;/p&gt;</content><author><name>DR Red</name></author><summary type="html">A post to test Syntax :)</summary></entry><entry><title type="html">About The Theme</title><link href="http://localhost:4000/2018/08/14/about-the-theme.html" rel="alternate" type="text/html" title="About The Theme" /><published>2018-08-14T00:00:00+08:00</published><updated>2018-08-14T00:00:00+08:00</updated><id>http://localhost:4000/2018/08/14/about-the-theme</id><content type="html" xml:base="http://localhost:4000/2018/08/14/about-the-theme.html">&lt;p&gt;A clean and responsive jekyll theme. Designing for legibility and accessibility.&lt;/p&gt;
+
+&lt;h2 id=&quot;installation&quot;&gt;Installation&lt;/h2&gt;
+
+&lt;p&gt;Add this line to your Jekyll site’s &lt;code class=&quot;highlighter-rouge&quot;&gt;Gemfile&lt;/code&gt;:&lt;/p&gt;
+
+&lt;div class=&quot;language-ruby highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;n&quot;&gt;gem&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&quot;jekyll-theme-mint&quot;&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;And add this line to your Jekyll site’s &lt;code class=&quot;highlighter-rouge&quot;&gt;_config.yml&lt;/code&gt;:&lt;/p&gt;
+
+&lt;div class=&quot;language-yaml highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;na&quot;&gt;theme&lt;/span&gt;&lt;span class=&quot;pi&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;jekyll-theme-mint&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;And then execute:&lt;/p&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;$ bundle
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;Or install it yourself as:&lt;/p&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;$ gem install jekyll-theme-mint
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;h2 id=&quot;usage&quot;&gt;Usage&lt;/h2&gt;
+
+&lt;h3 id=&quot;add-social-links&quot;&gt;Add social links&lt;/h3&gt;
+
+&lt;p&gt;Edit &lt;code class=&quot;highlighter-rouge&quot;&gt;_config.yml&lt;/code&gt; file to add your social links.&lt;/p&gt;
+
+&lt;div class=&quot;language-yaml highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;na&quot;&gt;github_username&lt;/span&gt;&lt;span class=&quot;pi&quot;&gt;:&lt;/span&gt;    &lt;span class=&quot;s&quot;&gt;your_name&lt;/span&gt;
+&lt;span class=&quot;na&quot;&gt;twitter_username&lt;/span&gt;&lt;span class=&quot;pi&quot;&gt;:&lt;/span&gt;   &lt;span class=&quot;s&quot;&gt;your_name&lt;/span&gt;
+&lt;span class=&quot;na&quot;&gt;facebook_username&lt;/span&gt;&lt;span class=&quot;pi&quot;&gt;:&lt;/span&gt;  &lt;span class=&quot;s&quot;&gt;your_name&lt;/span&gt;
+&lt;span class=&quot;na&quot;&gt;dribbble_username&lt;/span&gt;&lt;span class=&quot;pi&quot;&gt;:&lt;/span&gt;  &lt;span class=&quot;s&quot;&gt;your_name&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;h3 id=&quot;enable-disqus&quot;&gt;Enable Disqus&lt;/h3&gt;
+
+&lt;p&gt;Edit &lt;code class=&quot;highlighter-rouge&quot;&gt;_config.yml&lt;/code&gt; file to add your Disqus short name and you can enable Disqus on your site.&lt;/p&gt;
+
+&lt;div class=&quot;language-yaml highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;na&quot;&gt;disqus_shortname&lt;/span&gt;&lt;span class=&quot;pi&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;your_disqus_shortname&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;You can also disable Disqus on specific post by &lt;code class=&quot;highlighter-rouge&quot;&gt;comments: false&lt;/code&gt; to the post’s Front Matter.&lt;/p&gt;
+
+&lt;h3 id=&quot;enable-google-analytics&quot;&gt;Enable Google Analytics&lt;/h3&gt;
+
+&lt;p&gt;Edit &lt;code class=&quot;highlighter-rouge&quot;&gt;_config.yml&lt;/code&gt; file to add your google analytics tracking id and you can enable google analytics on your site.&lt;/p&gt;
+
+&lt;div class=&quot;language-yaml highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;na&quot;&gt;google_analytics&lt;/span&gt;&lt;span class=&quot;pi&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;your_google_analystics_tracker_id&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;h2 id=&quot;development&quot;&gt;Development&lt;/h2&gt;
+
+&lt;p&gt;To set up your environment to develop this theme, run &lt;code class=&quot;highlighter-rouge&quot;&gt;bundle install&lt;/code&gt;.&lt;/p&gt;
+
+&lt;p&gt;For test, you can run &lt;code class=&quot;highlighter-rouge&quot;&gt;bundle exec jekyll serve&lt;/code&gt; and open your browser at &lt;code class=&quot;highlighter-rouge&quot;&gt;http://localhost:4000&lt;/code&gt;.&lt;/p&gt;
+
+&lt;p&gt;For more information you can see here &lt;a href=&quot;https://jekyllrb.com/docs/themes/&quot;&gt;https://jekyllrb.com/docs/themes/&lt;/a&gt;.&lt;/p&gt;
+
+&lt;h2 id=&quot;license&quot;&gt;License&lt;/h2&gt;
+
+&lt;p&gt;The theme is available as open source under the terms of the &lt;a href=&quot;https://opensource.org/licenses/MIT&quot;&gt;MIT License&lt;/a&gt;.&lt;/p&gt;</content><author><name>DR Red</name></author><summary type="html">A clean and responsive jekyll theme. Designing for legibility and accessibility.</summary></entry><entry><title type="html">Sample Post</title><link href="http://localhost:4000/2018/08/13/sample-post.html" rel="alternate" type="text/html" title="Sample Post" /><published>2018-08-13T00:00:00+08:00</published><updated>2018-08-13T00:00:00+08:00</updated><id>http://localhost:4000/2018/08/13/sample-post</id><content type="html" xml:base="http://localhost:4000/2018/08/13/sample-post.html">&lt;p&gt;Sample post with some content styles.&lt;/p&gt;
+
+&lt;h2 id=&quot;headings&quot;&gt;Headings&lt;/h2&gt;
+
+&lt;blockquote&gt;
+  &lt;h1 id=&quot;my-first-blogpost&quot;&gt;my first blogpost&lt;/h1&gt;
+&lt;/blockquote&gt;
+
+&lt;h2 id=&quot;blockquotes&quot;&gt;Blockquotes&lt;/h2&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;inspiring quote&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;h2 id=&quot;lists&quot;&gt;Lists&lt;/h2&gt;
+
+&lt;p&gt;Unordered list:&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;list item&lt;/li&gt;
+  &lt;li&gt;list item&lt;/li&gt;
+  &lt;li&gt;list item&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;Ordered list:&lt;/p&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;list item&lt;/li&gt;
+  &lt;li&gt;list item&lt;/li&gt;
+  &lt;li&gt;list item&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;h2 id=&quot;code-block&quot;&gt;Code block&lt;/h2&gt;
+
+&lt;div class=&quot;language-ruby highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;k&quot;&gt;def&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;hello&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nb&quot;&gt;name&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+  &lt;span class=&quot;n&quot;&gt;pust&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&quot;hello, &lt;/span&gt;&lt;span class=&quot;si&quot;&gt;#{&lt;/span&gt;&lt;span class=&quot;nb&quot;&gt;name&lt;/span&gt;&lt;span class=&quot;si&quot;&gt;}&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;&lt;/span&gt;
+&lt;span class=&quot;k&quot;&gt;end&lt;/span&gt;
+
+&lt;span class=&quot;n&quot;&gt;hello&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s1&quot;&gt;'aide'&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+
+&lt;span class=&quot;c1&quot;&gt;# =&amp;gt; &quot;hello, aide&quot;&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;h2 id=&quot;link-and-image&quot;&gt;Link and image&lt;/h2&gt;
+
+&lt;p&gt;This is a &lt;a href=&quot;https://github.com/aidewoode/jekyll-theme-mint&quot;&gt;github&lt;/a&gt; link.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;http://localhost:4000/images/sample.jpg&quot; alt=&quot;Mint&quot; /&gt;&lt;/p&gt;
+
+&lt;h2 id=&quot;emphasis&quot;&gt;Emphasis&lt;/h2&gt;
+
+&lt;p&gt;A sentence with some &lt;strong&gt;important&lt;/strong&gt; content that you should &lt;em&gt;notice&lt;/em&gt;.&lt;/p&gt;</content><author><name>DR Red</name></author><summary type="html">Sample post with some content styles.</summary></entry></feed>
