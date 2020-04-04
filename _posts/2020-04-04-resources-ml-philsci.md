@@ -11,6 +11,8 @@ Here are some resources that I find interesting on research interacting between 
 
 [Robustness in Machine Learning Explanations: Does It Matter?](http://philsci-archive.pitt.edu/16686/1/sample-authordraft.pdf), Leif Hancox-Li (2020).
 
+[Transparency in Complex Computational Systems](http://philsci-archive.pitt.edu/16669/), Kathleen Creel (2019).
+
 [Value-laden Disciplinary Shifts in Machine Learning](https://arxiv.org/pdf/1912.01172v1.pdf), Ravit Dotan & Smitha Milli (2020).
 
 ## Conferences and Workshops
