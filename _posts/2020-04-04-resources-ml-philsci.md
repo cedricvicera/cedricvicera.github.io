@@ -13,7 +13,7 @@ Here are some resources that I find interesting on research interacting between 
 ## Values in Science
 [Value-laden Disciplinary Shifts in Machine Learning](https://arxiv.org/pdf/1912.01172v1.pdf), Ravit Dotan & Smitha Milli (2020).
 
-## Relevant Conferences
+## Conferences
 [Philosophy of machine learning: knowledge and causality](https://philmachinelearning.wordpress.com/), UC Irvine (2018).
 
 Comments are welcome! Please email me at [cedric@cedricvicera.com](mailto:cedric@cedricvicera.com)
