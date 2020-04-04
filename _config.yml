@@ -13,15 +13,16 @@
 # you will see them accessed via {{ site.title }}, {{ site.email }}, and so on.
 # You can create any custom variable you would like, and they will be accessible
 # in the templates via {{ site.myvariable }}.
-title: Nil
-email: aidewoode@gmail.com
-author: aidewoode
-lang: zh
-description: My own blog, wirtten my own life
-url: https://aidewoode.com # the base hostname & protocol for your site, e.g. http://example.com
+title: Cedric Vicera
+email: cedric@cedricvicera.com
+author: Cedric Vicera
+#lang: zh
+#description:
+url: https://www.cedricvicera.com # the base hostname & protocol for your site, e.g. http://example.com
 
-github_username: aidewoode
-blog_theme: auto
+github_username: cedricvicera
+twitter_username: cedricvicera
+blog_theme: dark
 
 # Build settings
 markdown: kramdown
