@@ -1,20 +1,18 @@
 title: Mint
-author: DR Red
+author: Cedric Vicera
 email: catwithpiano@gmail.com
-description: A blog of Red's research
+#description: A blog 
 
-github_username: mouseinacup
-# twitter_username:
-# facebook_username:
-# dribbble_username:
-# instagram_username:polarnight2090
+github_username: cedricvicera
+twitter_username: cedricvicera
+instagram_username: cedricvicera
 
 # date_format:
 
 # google_analytics:
 # disqus_shortname:
 
-blog_theme: auto
+blog_theme: dark
 
 markdown: kramdown
 

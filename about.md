@@ -4,6 +4,8 @@ title: About
 permalink: /about/
 ---
 
-This is a Jekyll theme. You can find more infomation at [Jekyll theme](https://jekyllrb.com/docs/themes/).
+I study Philosophy at the University of Arizona. Currently, I’m writing an honors thesis advised by [Richard Healey](http://www.u.arizona.edu/~rhealey/).
 
-You also can find the source code for this theme at [GitHub](https://github.com/aidewoode/jekyll-theme-mint).
+I'm also a member of the [Computational Medicine and Informatics Collaboratory](https://com-in.collab.arizona.edu/) and a section leader in the [School of Information](https://ischool.arizona.edu/).
+
+You can view my CV [here](/vicera_cv.pdf).
