@@ -4,13 +4,13 @@ title: 'Resources on Machine Learning and Philosophy of Science'
 ---
 Here are some resources that I find interesting on research interacting between machine learning and philosophy of science. This is mix of historical and current research. I expect that this will be updated.
 
-## Machine Learning Explanation
-[Robustness in Machine Learning Explanations: Does It Matter?](http://philsci-archive.pitt.edu/16686/1/sample-authordraft.pdf), Leif Hancox-Li (2020).
-
-## Machine Learning as Philosophy of Science
+## Articles
 [Introduction: Machine Learning as Philosophy of Science](https://link.springer.com/article/10.1023%2FB%3AMIND.0000045986.90956.7f), Kevin B. Korb (2004).
 
-## Values in Science
+[Philosophical Aspects of Pattern Recognition](https://www.sciencedirect.com/journal/pattern-recognition-letters/vol/64), Edited by Marcello Pelillo (2015).
+
+[Robustness in Machine Learning Explanations: Does It Matter?](http://philsci-archive.pitt.edu/16686/1/sample-authordraft.pdf), Leif Hancox-Li (2020).
+
 [Value-laden Disciplinary Shifts in Machine Learning](https://arxiv.org/pdf/1912.01172v1.pdf), Ravit Dotan & Smitha Milli (2020).
 
 ## Conferences and Workshops
