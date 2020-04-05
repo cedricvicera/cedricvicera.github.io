@@ -10,6 +10,7 @@ A general introduction to work on machine learning and philosophy of science.
 - [Deep Learning: A Philosophical Introduction](http://philsci-archive.pitt.edu/16326/), Cameron Buckner (2019).
 - [Judging machines: philosophical aspects of deep learning](https://link.springer.com/article/10.1007/s11229-019-02167-z), Arno Schubbach (2019).
  [Introduction: Machine Learning as Philosophy of Science](https://link.springer.com/article/10.1023%2FB%3AMIND.0000045986.90956.7f), Kevin Korb (2004).
+- [Making AI meaningful again](https://link.springer.com/article/10.1007/s11229-019-02192-y), Jobst Landgrebe & Barry Smith (2019).
 - [Philosophical Aspects of Pattern Recognition](https://www.sciencedirect.com/journal/pattern-recognition-letters/vol/64), Edited by Marcello Pelillo (2015).
 
 ### Biology and Machine Learning
