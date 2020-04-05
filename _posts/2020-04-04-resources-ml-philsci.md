@@ -7,7 +7,7 @@ Here are some resources that I find interesting on research interacting between 
 ## Articles
 ### General & Introduction
 A general introduction to work on machine learning and philosophy of science.
-- [Deep Learning: A Philosophical Introduction](http://philsci-archive.pitt.edu/16326/), Cameron Buckner (2019).
+- [Deep Learning: A Philosophical Introduction](https://onlinelibrary.wiley.com/doi/abs/10.1111/phc3.12625), Cameron Buckner (2019).
 - [Judging machines: philosophical aspects of deep learning](https://link.springer.com/article/10.1007/s11229-019-02167-z), Arno Schubbach (2019).
 - [Introduction: Machine Learning as Philosophy of Science](https://link.springer.com/article/10.1023%2FB%3AMIND.0000045986.90956.7f), Kevin Korb (2004).
 - [Making AI meaningful again](https://link.springer.com/article/10.1007/s11229-019-02192-y), Jobst Landgrebe & Barry Smith (2019).
