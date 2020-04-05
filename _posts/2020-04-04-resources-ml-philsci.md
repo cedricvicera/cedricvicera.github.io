@@ -12,7 +12,9 @@ A general introduction to work on machine learning and philosophy of science.
 - [Philosophical Aspects of Pattern Recognition](https://www.sciencedirect.com/journal/pattern-recognition-letters/vol/64), Edited by Marcello Pelillo (2015).
 
 ### Biology and Machine Learning
-Looking at cases of applications of machine learning in biology.
+Looking at cases of machine learning in biology.
+- [Data science and molecular biology: prediction and mechanistic explanation](https://link.springer.com/article/10.1007%2Fs11229-019-02271-0), Ezequiel López-Rubio & Emanuele Ratti (2019).
+- [Phronesis and Automated Science: The Case of Machine Learning and Biology](http://philsci-archive.pitt.edu/15770/1/Emanuele%20Ratti%20-%20Phronesis%20and%20Automated%20Science.pdf), Emanuele Ratti (2020).
 - [What Kind of Novelties Can Machine Learning Possibly Generate? The Case of Genomics](http://philsci-archive.pitt.edu/17008/), Emanuele Ratti (2020).
 
 ### Explanation, Transparency, Interpretability
