@@ -20,6 +20,7 @@ Looking at cases of machine learning in biology.
 - [What Kind of Novelties Can Machine Learning Possibly Generate? The Case of Genomics](http://philsci-archive.pitt.edu/17008/), Emanuele Ratti (2020).
 
 ### Explanation, Transparency, Interpretability
+Issues on explanation, transparency, accountability, Interpretability, etc. for machine learning models.
 - [The explanation game: a formal framework for interpretable machine learning](https://link.springer.com/article/10.1007/s11229-020-02629-9), David S. Watson & Luciano Floridi (2020).
 - [Mechanistic Models and the Explanatory Limits of Machine Learning](http://philsci-archive.pitt.edu/14452/1/manuscript%20philsci%20-%20Ratti%20%26%20Lopez-Rubio.pdf), Emanuele Ratti & Ezequiel López-Rubio (2018).
 - [Robustness in Machine Learning Explanations: Does It Matter?](http://philsci-archive.pitt.edu/16686/1/sample-authordraft.pdf), Leif Hancox-Li (2020).
