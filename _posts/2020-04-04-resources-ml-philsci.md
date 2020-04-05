@@ -6,28 +6,25 @@ Here are some resources that I find interesting on research interacting between 
 
 ## Articles
 ### General & Introduction
-[Deep Learning: A Philosophical Introduction](http://philsci-archive.pitt.edu/16326/), Cameron, Buckner (2019).
-
-[Introduction: Machine Learning as Philosophy of Science](https://link.springer.com/article/10.1023%2FB%3AMIND.0000045986.90956.7f), Kevin Korb (2004).
-
-[Philosophical Aspects of Pattern Recognition](https://www.sciencedirect.com/journal/pattern-recognition-letters/vol/64), Edited by Marcello Pelillo (2015).
+A general introduction to work on machine learning and philosophy of science.
+- [Deep Learning: A Philosophical Introduction](http://philsci-archive.pitt.edu/16326/), Cameron, Buckner (2019).
+- [Introduction: Machine Learning as Philosophy of Science](https://link.springer.com/article/10.1023%2FB%3AMIND.0000045986.90956.7f), Kevin Korb (2004).
+- [Philosophical Aspects of Pattern Recognition](https://www.sciencedirect.com/journal/pattern-recognition-letters/vol/64), Edited by Marcello Pelillo (2015).
 
 ### Biology and Machine Learning
-[What Kind of Novelties Can Machine Learning Possibly Generate? The Case of Genomics](http://philsci-archive.pitt.edu/17008/), Emanuele, Ratti (2020).
+Looking at cases of applications of machine learning in biology.
+- [What Kind of Novelties Can Machine Learning Possibly Generate? The Case of Genomics](http://philsci-archive.pitt.edu/17008/), Emanuele, Ratti (2020).
 
 ### Explanation, Transparency, Interpretability
-[Robustness in Machine Learning Explanations: Does It Matter?](http://philsci-archive.pitt.edu/16686/1/sample-authordraft.pdf), Leif Hancox-Li (2020).
-
-[Transparency in Complex Computational Systems](http://philsci-archive.pitt.edu/16669/), Kathleen Creel (2019).
+- [Robustness in Machine Learning Explanations: Does It Matter?](http://philsci-archive.pitt.edu/16686/1/sample-authordraft.pdf), Leif Hancox-Li (2020).
+- [Transparency in Complex Computational Systems](http://philsci-archive.pitt.edu/16669/), Kathleen Creel (2019).
 
 ### Values in Science
-[Value-laden Disciplinary Shifts in Machine Learning](https://arxiv.org/pdf/1912.01172v1.pdf), Ravit Dotan & Smitha Milli (2020).
+- [Value-laden Disciplinary Shifts in Machine Learning](https://arxiv.org/pdf/1912.01172v1.pdf), Ravit Dotan & Smitha Milli (2020).
 
 ## Conferences and Workshops
-[The Human Use of Machine Learning: An Interdisciplinary Workshop](https://www.dsi.unive.it/HUML2016/), ECLT (2016).
-
-[Philosophy and Machine Learning Workshop](https://www.dsi.unive.it/PhiMaLe2011/index.html), NIPS (2011).
-
-[Philosophy of Machine Learning: Knowledge and Causality](https://philmachinelearning.wordpress.com/), UC Irvine (2018).
+- [The Human Use of Machine Learning: An Interdisciplinary Workshop](https://www.dsi.unive.it/HUML2016/), ECLT (2016).
+- [Philosophy and Machine Learning Workshop](https://www.dsi.unive.it/PhiMaLe2011/index.html), NIPS (2011).
+- [Philosophy of Machine Learning: Knowledge and Causality](https://philmachinelearning.wordpress.com/), UC Irvine (2018).
 
 Comments are welcome! Please message me at [@cedricvicera](https://twitter.com/cedricvicera) or email me at [cedric@cedricvicera.com](mailto:cedric@cedricvicera.com)
