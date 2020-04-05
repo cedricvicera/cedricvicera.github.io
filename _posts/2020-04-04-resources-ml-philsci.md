@@ -16,6 +16,7 @@ Looking at cases of applications of machine learning in biology.
 - [What Kind of Novelties Can Machine Learning Possibly Generate? The Case of Genomics](http://philsci-archive.pitt.edu/17008/), Emanuele Ratti (2020).
 
 ### Explanation, Transparency, Interpretability
+- [Robustness in Machine Learning Explanations: Does It Matter?](http://philsci-archive.pitt.edu/14452/1/manuscript%20philsci%20-%20Ratti%20%26%20Lopez-Rubio.pdf), Emanuele Ratti & Ezequiel López-Rubio (2018).
 - [Robustness in Machine Learning Explanations: Does It Matter?](http://philsci-archive.pitt.edu/16686/1/sample-authordraft.pdf), Leif Hancox-Li (2020).
 - [Transparency in Complex Computational Systems](http://philsci-archive.pitt.edu/16669/), Kathleen Creel (2019).
 - [Understanding from Machine Learning Models](https://academic.oup.com/bjps/advance-article/doi/10.1093/bjps/axz035/5544117), Emily Sullivan (2019).
@@ -28,4 +29,4 @@ Looking at cases of applications of machine learning in biology.
 - [Philosophy and Machine Learning Workshop](https://www.dsi.unive.it/PhiMaLe2011/index.html), NIPS (2011).
 - [Philosophy of Machine Learning: Knowledge and Causality](https://philmachinelearning.wordpress.com/), UC Irvine (2018).
 
-Comments are welcome! Please message me at [@cedricvicera](https://twitter.com/cedricvicera) or email me at [cedric@cedricvicera.com](mailto:cedric@cedricvicera.com)
+Comments are welcome! Please contact me at [@cedricvicera](https://twitter.com/cedricvicera) or  [cedric@cedricvicera.com](mailto:cedric@cedricvicera.com)
