@@ -9,3 +9,5 @@ I study Philosophy at the University of Arizona. Currently, I’m writing an hon
 I'm also a member of the [Computational Medicine and Informatics Collaboratory](https://com-in.collab.arizona.edu/) and a teaching assistant in the [School of Information](https://ischool.arizona.edu/).
 
 You can view my CV [here](/vicera_cv.pdf).
+
+I also run a [YouTube Channel](https://www.youtube.com/channel/UCjk3q6_JrHveu8SyT1legmg).
