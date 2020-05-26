@@ -4,7 +4,10 @@ title: 'Globalization: Prophecy vs. History'
 ---
 Introduction
 
-### Section
+### Consumerism and the Hopes for Globalism
+Fukuyama observes that changes in popular consumerism are beginning to change in addition to intellectual culture.
+
+"But this phenomenon extends beyond high politics and it can be seen also in the ineluctable spread of consumerist Western culture in such diverse contexts [...]" (Fukuyama, 1989).
 
 
 ### References
