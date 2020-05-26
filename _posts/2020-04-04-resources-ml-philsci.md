@@ -40,4 +40,4 @@ Scientific and methodological issues in machine learning.
 - [Philosophy and Machine Learning Workshop](https://www.dsi.unive.it/PhiMaLe2011/index.html), NIPS (2011).
 - [Philosophy of Machine Learning: Knowledge and Causality](https://philmachinelearning.wordpress.com/), UC Irvine (2018).
 
-Comments are welcome! Please contact me at [@cedricvicera](https://twitter.com/cedricvicera) or  [cedric@cedricvicera.com](mailto:cedric@cedricvicera.com)
+Comments are welcome! Please contact me at [@cedricvicera](https://twitter.com/cedricvicera) or [cedric@cedricvicera.com](mailto:cedric@cedricvicera.com)
