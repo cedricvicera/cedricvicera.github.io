@@ -2,9 +2,10 @@
 layout: post
 title: 'Globalization: Prophecy vs. History'
 ---
-Introduction
+### Introduction
+This is the first of several posts on [GERMAN 270: Sovereignty and the Limits of Globalization and Technology](https://www.documentcloud.org/documents/5677718-Thiel-German-270-Syllabus.html) taught by Russell Berman and Peter Thiel. This post focuses on declarations of the end of the history and the case of recent globalization.
 
-### Consumerism and the Hopes for Globalism
+### Consumerism and the Hopes for Globalization
 Fukuyama observes that changes in popular consumerism are beginning to change in addition to intellectual culture.
 
 "But this phenomenon extends beyond high politics and it can be seen also in the ineluctable spread of consumerist Western culture in such diverse contexts [...]" (Fukuyama, 1989).
