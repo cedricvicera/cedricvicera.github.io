@@ -2,7 +2,7 @@
 layout: post
 title: 'Resources on Machine Learning and Philosophy of Science'
 ---
-Here are some resources that I find interesting on research interacting between machine learning and philosophy of science. This is mix of historical and current research. I expect that this will be updated.
+Here are some resources that I find interesting on research interacting between machine learning and philosophy of science. This is mix of historical and current research. I expect that this will be updated. Comments are welcome! Please contact me at [@cedricvicera](https://twitter.com/cedricvicera) or [cedric@cedricvicera.com](mailto:cedric@cedricvicera.com)
 
 ## Articles
 ### General & Introduction
@@ -39,5 +39,3 @@ Scientific and methodological issues in machine learning.
 - [The Human Use of Machine Learning: An Interdisciplinary Workshop](https://www.dsi.unive.it/HUML2016/), ECLT (2016).
 - [Philosophy and Machine Learning Workshop](https://www.dsi.unive.it/PhiMaLe2011/index.html), NIPS (2011).
 - [Philosophy of Machine Learning: Knowledge and Causality](https://philmachinelearning.wordpress.com/), UC Irvine (2018).
-
-Comments are welcome! Please contact me at [@cedricvicera](https://twitter.com/cedricvicera) or [cedric@cedricvicera.com](mailto:cedric@cedricvicera.com)
