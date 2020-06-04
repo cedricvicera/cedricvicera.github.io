@@ -15,7 +15,7 @@ Fukuyama recalls how audacious it may have been quite outrageous to listen to Al
 "We might summarize the content of the universal homogenous state as liberal democracy in the political sphere combined with easy access to VCRs and stereos in the economic." (Fukuyama, 1989).
 
 ### A Prophecy of Success Towards a History of Failure
-Kishore Mahbubani
+Kishore Mahbubani's *Has the West Lost It?* reminds us that "The End of History?" is actually a return to History.
 
 
 ### References
