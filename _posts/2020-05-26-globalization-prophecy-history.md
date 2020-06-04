@@ -16,6 +16,7 @@ Fukuyama recalls how audacious it may have been quite outrageous to listen to Al
 
 
 ### References
-- [“The End of History?”](https://www.jstor.org/stable/24027184), Francis Fukuyama (1989).
+- Fukuyama, F. (1989).*“The End of History?”*.
+- Mahbubani, K. (2018). *Has the West Lost It?*.
 
 Contact me at [@cedricvicera](https://twitter.com/cedricvicera) or [cedric@cedricvicera.com](mailto:cedric@cedricvicera.com)
