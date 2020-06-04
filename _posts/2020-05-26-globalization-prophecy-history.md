@@ -16,7 +16,7 @@ Fukuyama recalls how audacious it may have been quite outrageous to listen to Al
 
 
 ### References
-- Fukuyama, F. (1989).*“The End of History?”*.
-- Mahbubani, K. (2018). *Has the West Lost It?*.
+- Fukuyama, F. (1989). The End of History?. *The National Interest*, (16), 3-18.
+- Mahbubani, K. (2018). *Has the West Lost It?: A Provocation*. Penguin UK.
 
 Contact me at [@cedricvicera](https://twitter.com/cedricvicera) or [cedric@cedricvicera.com](mailto:cedric@cedricvicera.com)
