@@ -15,7 +15,7 @@ Fukuyama recalls how audacious it may have been quite outrageous to listen to Al
 "We might summarize the content of the universal homogenous state as liberal democracy in the political sphere combined with easy access to VCRs and stereos in the economic." (Fukuyama, 1989).
 
 ### A Prophecy of Success Towards a History of Failure
-Kishore Mahbubani's *Has the West Lost It?* reminds us that "The End of History?" is actually a return to History. For Mahbubani, Fukuyama is responsible for putting the West to sleep as the rest of the world (especially China and India) woke up. 2001 is known for the September 11 attacks. But what many people forgot to notice was that it was also the year that China became a member of the World Trade Organization. Mahbubani does not preclude that the West has lost it. However, he warns that it has a lot to learn from the rest of world.
+Kishore Mahbubani's *Has the West Lost It?* reminds us that "The End of History?" is actually a return to History. For Mahbubani, Fukuyama is responsible for putting the West to sleep as the rest of the world (especially China and India) woke up. 2001 is known for the September 11 attacks. But what many people forgot to notice was that it was also the year that China became a member of the World Trade Organization. While Western Exceptionalism continues to blind its adherents, the rest of world is rapidly developing. Mahbubani does not preclude that the West has lost it. However, he warns that it has a lot to learn from the rest of world.
 
 
 ### References
