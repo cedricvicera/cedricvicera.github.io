@@ -19,8 +19,8 @@ Kishore Mahbubani's (2018) *Has the West Lost It?* reminds us that "The End of H
 
 ### Global Commerce as the Path to Peace
 Norman Angell's (1913) *Great Illusion*
-
-Stephen Platt's (2018) vignette of China before the Opium War introduce two other moments, one and two centuries ago, when leaders believed that global commerce would bring about peace and unity.
+and
+Stephen Platt's (2018) vignette of China before the Opium War introduce two other moments, one and two centuries ago, when leaders believed that global commerce would bring about peace and unity. Platt documents the George Macartney's 1793 journey to China in hopes of opening up trade. However, the trip would result in cultural confusion, embarrassment, and a resentment that would ultimately prophesy the coming conflict to take place in China.
 
 
 ### References
