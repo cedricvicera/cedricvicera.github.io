@@ -33,7 +33,7 @@ body {
 
 .header__nav {
   white-space: nowrap;
-  overflow: auto;
+  //overflow: auto;
   margin-top: 12px;
 }
 
@@ -46,8 +46,6 @@ body {
 }
 
 .header__nav__item {
-  margin: 0;
-  padding: 0;
   margin-right: 10px;
 }
 
