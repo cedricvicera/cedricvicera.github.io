@@ -1,7 +1,7 @@
-title: Mint
-author: Author
-email: your-email@example.com
-description: A clean and responsive jekyll theme
+title: Cedric Vicera
+author: Cedric Vicera
+email: cedric@cedricvicera.com
+description: Cedric Vicera
 
 github_username: aidewoode
 # twitter_username:
@@ -13,7 +13,7 @@ github_username: aidewoode
 # google_analytics:
 # disqus_shortname:
 
-blog_theme: auto
+blog_theme: dark
 
 markdown: kramdown
 
