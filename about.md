@@ -4,8 +4,6 @@ title: About
 permalink: /about/
 ---
 
-I'm a student in the [Master of Computer and Information Technology (MCIT)](https://onlinelearning.seas.upenn.edu/mcit/) program at the University of Pennsylvania. Previously, I studied Philosophy at the University of Arizona where I was also a member of the [Computational Medicine and Informatics Collaboratory](https://com-in.collab.arizona.edu/).
+This is a Jekyll theme. You can find more infomation at [Jekyll theme](https://jekyllrb.com/docs/themes/).
 
-My CV can be found [here](/vicera-cv.pdf).
-
-I'm also on [YouTube](https://www.youtube.com/channel/UCjk3q6_JrHveu8SyT1legmg).
+You also can find the source code for this theme at [GitHub](https://github.com/aidewoode/jekyll-theme-mint).
