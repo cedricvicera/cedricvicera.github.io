@@ -1,10 +1,12 @@
 title: Cedric Vicera
 author: Cedric Vicera
 email: cedric@cedricvicera.com
-description: Cedric Vicera
+#lang: zh
+#description:
+#url: https://www.cedricvicera.com # the base hostname & protocol for your site, e.g. http://example.com
 
-github_username: aidewoode
-# twitter_username:
+github_username: cedricvicera
+twitter_username: cedricvicera
 # facebook_username:
 # dribbble_username:
 
