@@ -4,7 +4,10 @@ title: Reading List
 permalink: /reading-list/
 ---
 This is my reading list that's continually updated with books I've completed. Feel free to send me recommendations at [@cedricvicera](https://twitter.com/cedricvicera) or [cedric@cedricvicera.com](mailto:cedric@cedricvicera.com).
-# 2020
+
+<details>
+<summary>2020</summary>
+<section id="categories" markdown="1">
 1. *The Burnout Society* ∙ Byung-Chul Han
 2. *Dialogues on Ethical Vegetarianism* ∙ Michael Huemer
 3. *American Psycho* ∙ Bret Easton Ellis
@@ -22,3 +25,5 @@ This is my reading list that's continually updated with books I've completed. Fe
 15. *The Decadent Society: How We Became the Victims of Our Own Success* ∙ Ross Douthat
 16. *Uncanny Valley: A Memoir* ∙ Anna Wiener
 17. *So Good They Can't Ignore You: Why Skills Trump Passion in the Quest for Work You Love* ∙ Cal Newport
+</section>
+</details>
