@@ -25,5 +25,6 @@ This is my reading list that's continually updated with books I've completed. Fe
 15. *The Decadent Society: How We Became the Victims of Our Own Success* ∙ Ross Douthat
 16. *Uncanny Valley: A Memoir* ∙ Anna Wiener
 17. *So Good They Can't Ignore You: Why Skills Trump Passion in the Quest for Work You Love* ∙ Cal Newport
+18. *Cracks in the Ivory Tower: The Moral Mess of Higher Education* ∙ Jason Brennan & Phillip Magness
 </section>
 </details>
