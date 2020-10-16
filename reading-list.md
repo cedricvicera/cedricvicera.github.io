@@ -27,5 +27,6 @@ This is my reading list that's continually updated with books I've completed. Fe
 17. *So Good They Can't Ignore You: Why Skills Trump Passion in the Quest for Work You Love* ∙ Cal Newport
 18. *Cracks in the Ivory Tower: The Moral Mess of Higher Education* ∙ Jason Brennan & Phillip Magness
 19. *Based Deleuze: The Reactionary Leftism of Gilles Deleuze* ∙ Justin Murphy
+20. *The New Right: A Journey to the Fringe of American Politics* ∙ Michael Malice
 </section>
 </details>
