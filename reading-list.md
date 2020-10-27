@@ -28,5 +28,6 @@ This is my reading list that's continually updated with books I've completed. Fe
 18. *Cracks in the Ivory Tower: The Moral Mess of Higher Education* ∙ Jason Brennan & Phillip Magness
 19. *Based Deleuze: The Reactionary Leftism of Gilles Deleuze* ∙ Justin Murphy
 20. *The New Right: A Journey to the Fringe of American Politics* ∙ Michael Malice
+21. *Bronze Age Mindset* ∙ Bronze Age Pervert
 </section>
 </details>
