@@ -1,9 +1,9 @@
 ---
 layout: page
-title: Reading List
-permalink: /reading-list/
+title: Bookshelf
+permalink: /bookshelf/
 ---
-This is my reading list that's continually updated with books I've completed. Feel free to send me recommendations at [@cedricvicera](https://twitter.com/cedricvicera) or [cedric@cedricvicera.com](mailto:cedric@cedricvicera.com).
+This is my bookshelf that's continually updated with books I've completed. Feel free to send me recommendations at [@cedricvicera](https://twitter.com/cedricvicera) or [cedric@cedricvicera.com](mailto:cedric@cedricvicera.com).
 
 <details>
 <summary>2020</summary>
