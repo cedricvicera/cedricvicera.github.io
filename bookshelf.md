@@ -30,5 +30,6 @@ This is my bookshelf that's continually updated with books I've completed. Feel 
 20. *The New Right: A Journey to the Fringe of American Politics* ∙ Michael Malice
 21. *Bronze Age Mindset* ∙ Bronze Age Pervert
 22. *Economics in One Lesson* ∙ Henry Hazlitt
+23. *The Power of the Powerless* ∙ Václav Havel
 </section>
 </details>
