@@ -31,5 +31,6 @@ This is my bookshelf that's continually updated with books I've completed. Feel 
 21. *Bronze Age Mindset* ∙ Bronze Age Pervert
 22. *Economics in One Lesson* ∙ Henry Hazlitt
 23. *The Power of the Powerless* ∙ Václav Havel
+24. *Basic Economics* ∙ Thomas Sowell
 </section>
 </details>
