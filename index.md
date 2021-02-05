@@ -1,5 +1,7 @@
 ---
-layout: home
+layout: page
+title: Home
+permalink: /
 ---
 
 test
