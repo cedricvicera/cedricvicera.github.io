@@ -10,6 +10,14 @@
       {% endif %}
     {% endif %}
 
+    {% if site.youtube %}
+      <li class='footer__item'>
+        <a href='https://youtube.com/{{ site.youtube_username }}' title='youtube'>
+          {% include icon.html icon='youtube' %}
+        </a>
+      </li>
+    {% endif %}
+
     {% if site.github_username %}
       <li class='footer__item'>
         <a href='https://github.com/{{ site.github_username }}' title='github'>
