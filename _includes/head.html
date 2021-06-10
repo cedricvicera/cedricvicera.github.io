@@ -11,11 +11,13 @@
       <link rel='stylesheet' href='{{ '/assets/light.css' | relative_url }}'>
     {% when 'dark' %}
       <link rel='stylesheet' href='{{ '/assets/dark.css' | relative_url }}'>
+      <link rel="preconnect" href="https://fonts.gstatic.com">
+      <link href="https://fonts.googleapis.com/css2?family=Inter:wght@200&display=swap" rel="stylesheet">
     {% when 'auto' %}
       <link rel='stylesheet' href='{{ '/assets/light.css' | relative_url }}'>
       <link rel='stylesheet' href='{{ '/assets/dark.css' | relative_url }}' media="(prefers-color-scheme: dark)">
   {% endcase %}
 
   {% feed_meta %}
-  {% include google_analytics.html %}
+  <!--{% include google_analytics.html %}-->
 </head>
