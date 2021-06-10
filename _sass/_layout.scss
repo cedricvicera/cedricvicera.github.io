@@ -19,7 +19,7 @@ a:hover {
 
 body {
   background-color: $body-bg-color;
-  font-family: sans-serif-fonts;
+  font-family: $sans-serif-fonts;
 }
 
 .layout {
@@ -60,7 +60,7 @@ body {
 .header__title {
   font-size: 1.55rem;
   margin-right: 15px;
-  font-weight: bold;
+  font-weight: 100;
 }
 
 .posts {
