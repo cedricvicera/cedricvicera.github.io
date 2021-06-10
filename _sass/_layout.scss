@@ -19,7 +19,7 @@ a:hover {
 
 body {
   background-color: $body-bg-color;
-  font-family: $inter-fonts;
+  font-family: 'Inter', 'Inter UI', -apple-system, sans-serif;
 }
 
 .layout {
@@ -49,7 +49,7 @@ body {
 .header__title {
   text-decoration: none;
   font-size: 1rem;
-  font-family: $inter-fonts;
+  font-family: 'Inter', 'Inter UI', -apple-system, sans-serif;
   color: $header-color;
 }
 
@@ -80,7 +80,7 @@ body {
   width: 30%;
   color: $post-date-color;
   font-size: 1rem;
-  font-family: $inter-fonts;
+  font-family: 'Inter', 'Inter UI', -apple-system, sans-serif;
 }
 
 .posts__title {
@@ -97,7 +97,7 @@ body {
   padding: 25px 0;
   font-size: .9rem;
   font-style: italic;
-  font-family: $inter-fonts;
+  font-family: 'Inter', 'Inter UI', -apple-system, sans-serif;
   color: $footer-color;
 }
 
