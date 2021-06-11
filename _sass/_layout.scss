@@ -20,6 +20,8 @@ a:hover {
 body {
   background-color: $body-bg-color;
   font-family: 'Inter', 'Inter UI', -apple-system, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  font-size: 1rem;
 }
 
 .layout {
