@@ -10,6 +10,12 @@
       {% endif %}
     {% endif %}
 
+    <li class='footer__item'>
+      <a href='/links'>Links</a>
+        {% include icon.html icon='github' %}
+      </a>
+    </li>
+
     {% if site.github_username %}
       <li class='footer__item'>
         <a href='https://github.com/{{ site.github_username }}' title='github'>
@@ -25,7 +31,7 @@
         </a>
       </li>
     {% endif %}
-    
+
     <!--
     {% if site.youtube_username %}
       <li class='footer__item'>
