@@ -2,6 +2,17 @@
 layout: post
 ---
 
+### The Importance of Negative Motivation
+
+def. Negative Motivation: Examples that motivate you NOT TO do something.
+The motivation for you to avoid certain behaviors/lifestyles/actions.
+
+# Crude Examples
+People you don't like or want to end up as.
+
+# Subtle Examples
+How to avoid becoming someone who had "good intentions" but went awry/astray.
+
 Sample post with some content styles.
 
 ## Headings
