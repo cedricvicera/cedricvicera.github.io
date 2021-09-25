@@ -4,7 +4,7 @@ title: Home
 permalink: /
 ---
 
-I’m a Master's student in [Computer Science](https://onlinelearning.seas.upenn.edu/mcit/) at the University of Pennsylvania. Previously, I studied Philosophy at the University of Arizona.
+I’m a Master's student in [Computer Science](https://online.seas.upenn.edu/degrees/mcit-online/) at the University of Pennsylvania. Previously, I studied Philosophy at the University of Arizona.
 
 I’m interested in machine learning, complex systems, and epistemology.
 
