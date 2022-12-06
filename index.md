@@ -6,7 +6,7 @@ permalink: /
 
 Hello! I'm Cedric.
 
-Currently I work as a data scientist at [CVS Health](https://www.cvshealth.com/).
+Currently I work as a data scientist.
 
 Previously, I studied [Philosophy](https://philosophy.arizona.edu/).
 
