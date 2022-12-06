@@ -6,7 +6,7 @@ permalink: /
 
 Hello! I'm Cedric.
 
-Currently I work as a data scientist.
+I'm a Data Scientist by day and a [Cinephile](https://letterboxd.com/cedricvicera/) by night.
 
 Previously, I studied [Philosophy](https://philosophy.arizona.edu/).
 
