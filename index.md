@@ -6,7 +6,7 @@ permalink: /
 
 Hello! I'm Cedric.
 
-I'm a Data Scientist by day and a [Cinephile](https://letterboxd.com/cedricvicera/) by night.
+I'm a Data Scientist and [Cinephile](https://letterboxd.com/cedricvicera/).
 
 Previously, I studied [Philosophy](https://philosophy.arizona.edu/).
 
