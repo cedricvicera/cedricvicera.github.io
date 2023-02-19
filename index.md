@@ -4,8 +4,6 @@ title: Home
 permalink: /
 ---
 
-Hello! I'm Cedric.
-
 Data scientist based in Boston.
 
 I watch [movies](https://letterboxd.com/cedricvicera).
