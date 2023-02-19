@@ -4,10 +4,8 @@ title: Home
 permalink: /
 ---
 
-Hello! I'm Cedric.
+Data scientist based in Boston.
 
-I'm a Data Scientist and [Cinephile](https://letterboxd.com/cedricvicera/).
+I watch [movies](https://letterboxd.com/cedricvicera).
 
-Previously, I studied [Philosophy](https://philosophy.arizona.edu/).
-
-You can also find me on [YouTube](http://www.youtube.com/cedricvicera) and [Instagram](https://www.instagram.com/cedricvicera/).
+You can find me on [YouTube](http://www.youtube.com/cedricvicera) and [Instagram](https://www.instagram.com/cedricvicera).
