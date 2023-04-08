@@ -3,8 +3,6 @@ layout: page
 permalink: /
 ---
 
-Data scientist based in Boston.
+I am a data scientist at [CVS Health](https://www.cvshealth.com) working on immunization outreach. 
 
-I watch [movies](https://letterboxd.com/cedricvicera).
-
-You can find me on [YouTube](http://www.youtube.com/cedricvicera) and [Instagram](https://www.instagram.com/cedricvicera).
+I watch [movies](https://letterboxd.com/cedricvicera) and share my initial reactions.
