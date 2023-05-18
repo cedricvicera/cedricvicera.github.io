@@ -3,6 +3,6 @@ layout: page
 permalink: /
 ---
 
-I am a data scientist working on immunization outreach. 
+Hello! I'm Cedric. I'm a data scientist currently working on immunization analytics.
 
-I watch [movies](https://letterboxd.com/cedricvicera) and share my initial reactions.
+I watch a lot of [movies](https://letterboxd.com/cedricvicera) and share my initial reactions.
