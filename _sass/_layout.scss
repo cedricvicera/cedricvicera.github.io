@@ -19,7 +19,7 @@ a:hover {
 
 body {
   background-color: $body-bg-color;
-  //font-family: 'Inter', 'Inter UI', -apple-system, sans-serif;
+  font-family: 'Inter', 'Inter UI', -apple-system, sans-serif;
   -webkit-font-smoothing: antialiased;
   font-size: 1rem;
 }
@@ -51,7 +51,7 @@ body {
 .header__title {
   text-decoration: none;
   font-size: 1rem;
-  //font-family: 'Inter', 'Inter UI', -apple-system, sans-serif;
+  font-family: 'Inter', 'Inter UI', -apple-system, sans-serif;
   color: $header-color;
 }
 
