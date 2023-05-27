@@ -12,19 +12,18 @@
     {% endif %}
       -->
     
-
     <li class='footer__item'>
-      <a href='https://www.instagram.com/cedricvicera/'>Instagram</a>
+      <a href='https://www.instagram.com/{{ site.username }}'>Instagram</a>
     </li>
 
     <li class='footer__item'>
-      <a href='https://www.linkedin.com/in/cedricvicera/'>LinkedIn</a>
+      <a href='https://www.linkedin.com/in/{{ site.username }}'>LinkedIn</a>
     </li>
 
     <!--
     {% if site.github_username %}
       <li class='footer__item'>
-        <a href='https://github.com/{{ site.github_username }}' title='github'>
+        <a href='https://github.com/{{ site.username }}' title='github'>
           {% include icon.html icon='github' %}
         </a>
       </li>
@@ -32,7 +31,7 @@
 
     {% if site.twitter_username %}
       <li class='footer__item'>
-        <a href='https://twitter.com/{{ site.twitter_username }}' title='twitter'>
+        <a href='https://twitter.com/{{ site.username }}' title='twitter'>
           {% include icon.html icon='twitter' %}
         </a>
       </li>
@@ -42,7 +41,7 @@
     <!--
     {% if site.youtube_username %}
       <li class='footer__item'>
-        <a href='https://youtube.com/{{ site.youtube_username }}' title='youtube'>
+        <a href='https://youtube.com/{{ site.username }}' title='youtube'>
           {% include icon.html icon='youtube' %}
         </a>
       </li>
