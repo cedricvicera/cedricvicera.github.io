@@ -14,7 +14,7 @@ a {
 }
 
 a:hover {
-   text-decoration: none;
+   text-decoration: underline;
 }
 
 body {
@@ -98,9 +98,13 @@ body {
 .footer {
   padding: 25px 0;
   font-size: .9rem;
-  font-style: italic;
+  // font-style: italic;
   font-family: 'Inter', 'Inter UI', -apple-system, sans-serif;
   color: $footer-color;
+}
+
+.footer:hover {
+  text-decoration: underline;
 }
 
 .footer__list {
