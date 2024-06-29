@@ -11,12 +11,6 @@
       {% endif %}
     {% endif %}
       -->
-  
-    <!--
-    <li class='footer__item'>
-      <a href='https://www.instagram.com/{{ site.username }}'>Instagram</a>
-    </li>
-    -->
 
     <!--
     <li class='footer__item'>
@@ -24,15 +18,17 @@
     </li>
     -->
 
-    <!--
-    {% if site.github_username %}
-      <li class='footer__item'>
-        <a href='https://github.com/{{ site.username }}' title='github'>
-          {% include icon.html icon='github' %}
-        </a>
-      </li>
-    {% endif %}
+    
 
+    <!-- <li class='footer__item'>
+      <a href='https://github.com/{{ site.username }}' title='github'>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24" fill="currentColor">
+          <path d="M12 0C5.37 0 0 5.37 0 12c0 5.3 3.438 9.8 8.205 11.387.6.105.82-.262.82-.58 0-.29-.01-1.056-.015-2.07-3.338.724-4.042-1.61-4.042-1.61-.547-1.384-1.336-1.754-1.336-1.754-1.09-.744.083-.73.083-.73 1.205.085 1.84 1.238 1.84 1.238 1.07 1.834 2.806 1.305 3.49.998.108-.78.417-1.306.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.468-2.38 1.235-3.22-.135-.303-.54-1.524.105-3.176 0 0 1.005-.322 3.3 1.23a11.53 11.53 0 013.01-.406c1.024.005 2.056.138 3.01.406 2.292-1.553 3.296-1.23 3.296-1.23.645 1.652.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.435.372.815 1.1.815 2.22 0 1.605-.015 2.896-.015 3.286 0 .32.21.69.825.57C20.57 21.793 24 17.293 24 12c0-6.63-5.37-12-12-12z"/>
+        </svg>
+    </li> -->
+    
+
+    <!--
     {% if site.twitter_username %}
       <li class='footer__item'>
         <a href='https://twitter.com/{{ site.username }}' title='twitter'>
@@ -41,16 +37,38 @@
       </li>
     {% endif %}
     -->
+    
 
-    <!--
-    {% if site.youtube_username %}
+    <!-- {% if site.instagram_username %}
+      <li class='footer__item'>
+        <a href='https://instagram.com/{{ site.username }}' title='instagram'>
+          {% include icon.html icon='instagram' %}
+        </a>
+      </li>
+    {% endif %} -->
+    
+    <!-- {% if site.youtube_username %}
       <li class='footer__item'>
         <a href='https://youtube.com/{{ site.username }}' title='youtube'>
           {% include icon.html icon='youtube' %}
         </a>
       </li>
-    {% endif %}
-    -->
+    {% endif %} -->
+
+    <li class='footer__item'>
+      <a href='https://instagram.com/{{ site.username }}' title='instagram'>
+        <img src="/assets/icons/instagram.svg" />
+      </a>
+    </li>
+
+    <li class='footer__item'>
+      <a href='https://youtube.com/{{ site.username }}' title='youtube'>
+        <img src="/assets/icons/youtube.svg" />
+      </a>
+    </li>
+
+    
+    
 
     <!--
     {% if site.dribbble_username %}

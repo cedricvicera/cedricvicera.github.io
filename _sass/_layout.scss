@@ -10,12 +10,11 @@ html {
 }
 
 a {
-   text-decoration: none;
+  text-decoration: none;
 }
 
 a:hover {
-  //  text-decoration: underline;
-  filter: brightness(0.5);
+  filter: brightness(0.5); // Adjusted for hover effect
 }
 
 body {
@@ -97,9 +96,13 @@ body {
 }
 
 .footer {
+  display: flex;
+  justify-content: center; // Centering the content horizontally
+  align-items: center;
   padding: 25px 0;
   font-size: .9rem;
-  font-family: 'Inter', 'Inter UI', -apple-system, sans-serif;
+  font-style: italic;
+  font-family: $serif-fonts; // Assuming $serif-fonts is defined elsewhere
   color: $footer-color;
 }
 
@@ -111,12 +114,8 @@ body {
 }
 
 .footer__item {
-  margin-right: 20px;
+  margin-right: 10px;
   display: flex;
-}
-
-.footer__item:hover {
-  text-decoration: underline;
 }
 
 .footer__item a {

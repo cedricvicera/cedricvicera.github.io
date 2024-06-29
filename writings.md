@@ -4,4 +4,4 @@ title: Writings
 permalink: /writings
 ---
 
-Coming soon.
+*Brevi Tempore...*
