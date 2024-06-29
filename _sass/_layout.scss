@@ -14,7 +14,8 @@ a {
 }
 
 a:hover {
-   text-decoration: underline;
+  //  text-decoration: underline;
+  filter: brightness(0.5);
 }
 
 body {
@@ -33,8 +34,8 @@ body {
 .header {
   text-align: center;
   display: flex;
-  flex-wrap: wrap;
-  align-items: baseline;
+  flex-direction: column;
+  align-items: center;
   padding: 50px 0;
 }
 
@@ -44,7 +45,6 @@ body {
 
 .header__nav {
   white-space: nowrap;
-  //overflow: auto;
   margin-top: 12px;
 }
 
@@ -62,7 +62,7 @@ body {
 
 .header__title {
   font-size: 1.55rem;
-  margin-right: 15px;
+  margin-bottom: 15px; // Adjusted to add spacing between title and nav items
   font-weight: 100;
 }
 
@@ -99,7 +99,6 @@ body {
 .footer {
   padding: 25px 0;
   font-size: .9rem;
-  // font-style: italic;
   font-family: 'Inter', 'Inter UI', -apple-system, sans-serif;
   color: $footer-color;
 }
@@ -124,13 +123,6 @@ body {
   color: $footer-color;
   text-decoration: none;
 }
-
-/*
-.footer__item:nth-child(2):before {
-  content: '|';
-  margin-right: 10px;
-}
-*/
 
 .icon {
   height: .9rem;
