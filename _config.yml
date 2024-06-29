@@ -12,7 +12,7 @@ username: cedricvicera
 # google_analytics:
 # disqus_shortname:
 
-blog_theme: dark
+blog_theme: light
 
 markdown: kramdown
 
