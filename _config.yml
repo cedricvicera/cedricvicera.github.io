@@ -15,7 +15,11 @@ username: cedricvicera
 blog_theme: light
 
 markdown: kramdown
+kramdown:
+  input: GFM
 
 plugins:
  - jekyll-feed
  - jekyll-seo-tag
+
+ 
