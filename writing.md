@@ -1,7 +1,7 @@
 ---
 layout: page
-title: Writings
-permalink: /writings
+title: Writing
+permalink: /writing
 ---
 
 *Brevi Tempore...*
