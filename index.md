@@ -4,7 +4,7 @@ permalink: /
 ---
 
 <figure>
-  <img src="/assets/images/flower-study.jpg" alt="Flower Study by Yun Bing">
+  <img src="/assets/images/flower-study.jpg" alt="Flower Study by Yun Bing" width="400">
   <figcaption>Flower Study・Yun Bing</figcaption>
 </figure>
 
