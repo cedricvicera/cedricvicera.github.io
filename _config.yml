@@ -1,11 +1,10 @@
 title: Cedric Vicera
 author: Cedric Vicera
-url: "https://cedricvicera.com"
+url: "https://cedricvicera.com" # the base hostname & protocol for your site, e.g. http://example.com
 permalink: /:title
 #email:
 #lang: en
 #description:
-#url: https://www.cedricvicera.com # the base hostname & protocol for your site, e.g. http://example.com
 
 username: cedricvicera
 github_username: cedricvicera
