@@ -9,11 +9,5 @@
       </main>
       {% include footer.html %}
     </div>
-    <script>
-      if (window.location.pathname === '/' && window.location.href.endsWith('/')) {
-        const newUrl = window.location.href.slice(0, -1);
-        window.history.replaceState({}, document.title, newUrl);
-      }
-    </script>
   </body>
 </html>
