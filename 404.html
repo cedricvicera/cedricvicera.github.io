@@ -1,16 +1,30 @@
 ---
 permalink: /404.html
-layout: default
 ---
 <script>
-// Redirect URLs with trailing slashes to versions without
-const path = window.location.pathname;
+// Remove trailing slash if present
+let path = window.location.pathname;
+let host = window.location.hostname;
+let needsRedirect = false;
+let newUrl = window.location.protocol + "//";
+
+// Remove www if present
+if (host.startsWith('www.')) {
+  host = host.substring(4);
+  needsRedirect = true;
+}
+
+// Remove trailing slash if present and not homepage
 if (path.endsWith('/') && path !== '/') {
-  window.location.replace(path.slice(0, -1) + window.location.search + window.location.hash);
+  path = path.slice(0, -1);
+  needsRedirect = true;
+}
+
+if (needsRedirect) {
+  newUrl += host + path + window.location.search + window.location.hash;
+  window.location.replace(newUrl);
 }
 </script>
 
-<div>
-  <h1>Page not found</h1>
-  <p>The requested page could not be found.</p>
-</div>
+<h1>Page not found</h1>
+<p>The requested page could not be found.</p>
