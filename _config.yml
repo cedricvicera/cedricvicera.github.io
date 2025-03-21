@@ -1,7 +1,7 @@
 title: Cedric Vicera
 author: Cedric Vicera
 url: "https://cedricvicera.com" # the base hostname & protocol for your site, e.g. http://example.com
-permalink: /:title
+#permalink: /:title
 #email:
 #lang: en
 #description:
@@ -26,6 +26,5 @@ kramdown:
 plugins:
  - jekyll-feed
  - jekyll-seo-tag
- - jekyll-redirect-from
 
  

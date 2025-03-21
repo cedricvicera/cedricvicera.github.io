@@ -1,9 +1,6 @@
 ---
 layout: page
 permalink: /
-redirect_from:
-  - /index.html
-  - /index/
 ---
 
 <figure>
