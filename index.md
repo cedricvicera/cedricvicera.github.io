@@ -8,4 +8,4 @@ permalink: /
   <figcaption>Lilies・Katsushika Hokusai</figcaption>
 </figure>
 
-I am a data scientist working in product analytics. Previously, I studied philosophy and computer science.
+I work in analytics. Previously, I studied philosophy and computer science.
