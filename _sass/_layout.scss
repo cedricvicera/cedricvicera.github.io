@@ -26,9 +26,9 @@ body {
 }
 
 .layout {
-  max-width: 700px;
+  max-width: 500px; // Reduced from 700px to match Emily's proportions
   margin: auto;
-  padding: 0 15px;
+  padding: 0 20px; // Slightly increased padding
 }
 
 .header {
