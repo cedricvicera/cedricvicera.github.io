@@ -22,7 +22,7 @@ body {
   font-family: 'Inter', 'Inter UI', -apple-system, sans-serif;
   font-weight: 200; /* ExtraLight */
   -webkit-font-smoothing: antialiased;
-  font-size: 1rem;
+  font-size: 0.875rem; // 14px if base is 16px
 }
 
 .layout {
