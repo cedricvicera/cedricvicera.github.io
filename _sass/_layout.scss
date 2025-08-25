@@ -13,8 +13,8 @@ a {
   text-decoration: none;
 }
 
-a:hover {
-  filter: brightness(0.5); // Adjusted for hover effect
+a:hover:not(:has(img)) {
+  filter: brightness(0.5); // Adjusted for hover effect, but not for links containing images
 }
 
 body {
