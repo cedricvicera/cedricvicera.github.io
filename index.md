@@ -9,4 +9,6 @@ permalink: /
   </a>
 </figure>
 
-I work in analytics. Previously, I studied philosophy and computer science.
+I work in data science and analytics. 
+
+Previously, I studied philosophy and computer science.
