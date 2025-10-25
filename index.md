@@ -3,12 +3,21 @@ layout: page
 permalink: /
 ---
 
-<figure>
-  <a href="https://www.artic.edu/artworks/25102/lilies-from-an-untitled-series-of-large-flowers">
-    <img src="/assets/images/lillies.jpg" alt="Lilies by Katsushika Hokusai">
-  </a>
-</figure>
+<div class="home-container">
+  <!-- Wave Animation Canvas -->
+  <div class="wave-animation-wrapper">
+    <canvas id="wave-canvas" width="550" height="550"></canvas>
+  </div>
+  
+  <!-- Your existing content -->
+  <div class="content">
+    <h1>Cedric Vicera</h1>
+    
+    <div class="bio">
+      <p>I work in data science and analytics.</p>
+      <p>Previously, I studied philosophy and computer science.</p>
+    </div>
+  </div>
+</div>
 
-I work in data science and analytics. 
-
-Previously, I studied philosophy and computer science.
+<script src="{{ '/assets/js/wave-animation.js' | relative_url }}"></script>

@@ -1,0 +1,104 @@
+/* Wave Animation Styles */
+
+.home-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  padding: 2rem;
+}
+
+.wave-animation-wrapper {
+  margin-bottom: 3rem;
+  position: relative;
+}
+
+#wave-canvas {
+  display: block;
+  max-width: 100%;
+  height: auto;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  border-radius: 4px;
+}
+
+.content {
+  text-align: center;
+  max-width: 600px;
+}
+
+.content h1 {
+  font-size: 2.5rem;
+  margin-bottom: 1.5rem;
+  color: #333;
+  font-weight: 300;
+  letter-spacing: 0.05em;
+}
+
+.bio {
+  font-size: 1.125rem;
+  line-height: 1.6;
+  color: #666;
+}
+
+.bio p {
+  margin-bottom: 0.75rem;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  #wave-canvas {
+    width: 100%;
+    max-width: 400px;
+  }
+  
+  .content h1 {
+    font-size: 2rem;
+  }
+  
+  .bio {
+    font-size: 1rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .home-container {
+    padding: 1rem;
+  }
+  
+  #wave-canvas {
+    max-width: 100%;
+  }
+  
+  .wave-animation-wrapper {
+    margin-bottom: 2rem;
+  }
+  
+  .content h1 {
+    font-size: 1.75rem;
+  }
+}
+
+/* Alternative layout: Side-by-side on larger screens */
+@media (min-width: 1024px) {
+  .home-container {
+    flex-direction: row;
+    gap: 4rem;
+    align-items: center;
+  }
+  
+  .wave-animation-wrapper {
+    margin-bottom: 0;
+  }
+  
+  .content {
+    text-align: left;
+  }
+}
+
+/* Performance: Reduce animation on devices with reduced motion preference */
+@media (prefers-reduced-motion: reduce) {
+  #wave-canvas {
+    /* You could add a static image fallback here if desired */
+  }
+}
