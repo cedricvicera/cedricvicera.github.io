@@ -16,9 +16,9 @@ article.post {
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
-  min-height: 100vh;
-  height: 100vh;
+  justify-content: flex-start;  /* Changed from center */
+  min-height: auto;  /* Changed from 100vh */
+  height: auto;  /* Changed from 100vh */
   padding: 2rem;
   gap: 2rem;
 }
