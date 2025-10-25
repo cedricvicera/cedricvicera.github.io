@@ -1,4 +1,4 @@
-/* Wave Animation Styles - Single Screen Centered Layout */
+/* Wave Animation Styles - Single Screen Centered Layout (Fixed) */
 
 body {
   margin: 0;
@@ -11,10 +11,16 @@ body {
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  min-height: 100vh;
-  height: 100vh;
+  min-height: calc(100vh - var(--header-height, 80px)); /* Subtract header height */
+  height: calc(100vh - var(--header-height, 80px));
   padding: 2rem;
   gap: 2rem; /* Controlled spacing between animation and text */
+  margin-top: 0; /* Remove any default margin */
+}
+
+/* Alternative if you want to account for header more precisely */
+.home-container.with-header {
+  padding-top: 1rem; /* Reduced top padding since header exists */
 }
 
 .wave-animation-wrapper {
@@ -93,6 +99,8 @@ body {
   .home-container {
     padding: 1rem;
     gap: 1rem;
+    min-height: calc(100vh - var(--header-height, 60px));
+    height: calc(100vh - var(--header-height, 60px));
   }
   
   #wave-canvas {
