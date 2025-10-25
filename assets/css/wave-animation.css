@@ -1,4 +1,10 @@
-/* Wave Animation Styles */
+/* Wave Animation Styles - Single Screen Centered Layout */
+
+body {
+  margin: 0;
+  padding: 0;
+  overflow: hidden; /* Prevents scrolling */
+}
 
 .home-container {
   display: flex;
@@ -6,33 +12,33 @@
   align-items: center;
   justify-content: center;
   min-height: 100vh;
+  height: 100vh;
   padding: 2rem;
+  gap: 2rem; /* Controlled spacing between animation and text */
 }
 
 .wave-animation-wrapper {
-  margin-bottom: 3rem;
-  position: relative;
+  flex-shrink: 0;
 }
 
 #wave-canvas {
   display: block;
-  max-width: 100%;
+  width: 100%;
+  max-width: 800px; /* Rectangular width */
   height: auto;
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
   border-radius: 4px;
 }
 
 .content {
   text-align: center;
   max-width: 600px;
+  flex-shrink: 0;
 }
 
+/* Remove name from body text since header has it */
 .content h1 {
-  font-size: 2.5rem;
-  margin-bottom: 1.5rem;
-  color: #333;
-  font-weight: 300;
-  letter-spacing: 0.05em;
+  display: none;
 }
 
 .bio {
@@ -45,15 +51,25 @@
   margin-bottom: 0.75rem;
 }
 
+.bio p:last-child {
+  margin-bottom: 0;
+}
+
 /* Responsive adjustments */
-@media (max-width: 768px) {
+@media (max-width: 1024px) {
   #wave-canvas {
-    width: 100%;
-    max-width: 400px;
+    max-width: 700px;
+  }
+}
+
+@media (max-width: 768px) {
+  .home-container {
+    padding: 1.5rem;
+    gap: 1.5rem;
   }
   
-  .content h1 {
-    font-size: 2rem;
+  #wave-canvas {
+    max-width: 100%;
   }
   
   .bio {
@@ -64,41 +80,41 @@
 @media (max-width: 480px) {
   .home-container {
     padding: 1rem;
+    gap: 1rem;
   }
   
-  #wave-canvas {
-    max-width: 100%;
-  }
-  
-  .wave-animation-wrapper {
-    margin-bottom: 2rem;
-  }
-  
-  .content h1 {
-    font-size: 1.75rem;
+  .bio {
+    font-size: 0.95rem;
   }
 }
 
-/* Alternative layout: Side-by-side on larger screens */
-@media (min-width: 1024px) {
+/* Ensure content doesn't overflow on short screens */
+@media (max-height: 700px) {
   .home-container {
-    flex-direction: row;
-    gap: 4rem;
-    align-items: center;
+    padding: 1rem;
+    gap: 1rem;
   }
   
-  .wave-animation-wrapper {
-    margin-bottom: 0;
+  #wave-canvas {
+    max-width: 600px;
   }
   
-  .content {
-    text-align: left;
+  .bio {
+    font-size: 1rem;
   }
 }
 
-/* Performance: Reduce animation on devices with reduced motion preference */
-@media (prefers-reduced-motion: reduce) {
+@media (max-height: 600px) {
+  .home-container {
+    padding: 0.75rem;
+    gap: 0.75rem;
+  }
+  
   #wave-canvas {
-    /* You could add a static image fallback here if desired */
+    max-width: 500px;
+  }
+  
+  .bio {
+    font-size: 0.9rem;
   }
 }

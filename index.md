@@ -4,15 +4,13 @@ permalink: /
 ---
 
 <div class="home-container">
-  <!-- Wave Animation Canvas -->
+  <!-- Wave Animation Canvas - Rectangular Format -->
   <div class="wave-animation-wrapper">
-    <canvas id="wave-canvas" width="550" height="550"></canvas>
+    <canvas id="wave-canvas" width="800" height="300"></canvas>
   </div>
   
-  <!-- Your existing content -->
+  <!-- Content (no name since header has it) -->
   <div class="content">
-    <h1>Cedric Vicera</h1>
-    
     <div class="bio">
       <p>I work in data science and analytics.</p>
       <p>Previously, I studied philosophy and computer science.</p>
