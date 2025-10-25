@@ -2,7 +2,7 @@
 
 /* Define your header height here - measure your actual header and update this value */
 :root {
-  --header-height: 80px; /* ADJUST THIS: Measure your header's actual height */
+  --header-height: 0px; /* ADJUST THIS: Measure your header's actual height */
 }
 
 body {
