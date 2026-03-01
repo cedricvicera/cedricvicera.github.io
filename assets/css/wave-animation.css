@@ -35,7 +35,7 @@ article.post {
 }
 
 .content {
-  text-align: center;
+  text-align: left;
   max-width: 600px;
   flex-shrink: 0;
 }
