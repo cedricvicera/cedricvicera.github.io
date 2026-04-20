@@ -61,13 +61,13 @@ permalink: /
   margin-top: 2px;
 }
 .no-shelves .shelf-row::after { display: none !important; }
-.books-grid { display: grid; grid-template-columns: repeat(2, 1fr); gap: 5px; }
+.books-grid { display: grid; grid-template-columns: repeat(2, 1fr); gap: 10px; }
 @media (min-width: 600px) {
   .books-grid { grid-template-columns: repeat(7, 1fr); }
 }
 
 .book-item {
-  position: relative; cursor: pointer; border-radius: 2px;
+  position: relative; cursor: pointer; border-radius: 6px;
   overflow: visible; aspect-ratio: 2/3; background: #e0dbd5;
   transform-origin: bottom center;
   transition: transform 0.2s cubic-bezier(.22,.68,0,1.2), box-shadow 0.2s ease;
@@ -82,7 +82,7 @@ permalink: /
   box-shadow: 0 12px 24px rgba(0,0,0,0.18);
   z-index: 10;
 }
-.book-item img { width: 100%; height: 100%; object-fit: cover; display: block; border-radius: 2px; }
+.book-item img { width: 100%; height: 100%; object-fit: cover; display: block; border-radius: 6px; }
 .book-tooltip {
   position: absolute; bottom: calc(100% + 8px); left: 50%; transform: translateX(-50%);
   background: #1c1c1c; color: white; padding: 5px 8px; border-radius: 4px;
@@ -95,8 +95,8 @@ permalink: /
   border: 4px solid transparent; border-top-color: #1c1c1c;
 }
 .book-item:hover .book-tooltip { opacity: 1; }
-.book-tooltip b { display: block; font-weight: 600; font-size: 0.58rem; }
-.book-tooltip span { font-style: italic; opacity: 0.75; font-size: 0.53rem; }
+.book-tooltip b { display: block; font-weight: 600; font-size: 0.58rem; color: #ffffff; }
+.book-tooltip span { font-style: italic; color: #aaaaaa; font-size: 0.53rem; }
 .book-placeholder {
   width: 100%; height: 100%; display: flex; align-items: center; justify-content: center;
   padding: 6px; text-align: center; font-size: 0.45rem; color: #5c5c5c; line-height: 1.3;
@@ -153,116 +153,63 @@ permalink: /
   </div>
 </div>
 
-<div class="bookshelf" id="shelf"></div>
+<div class="bookshelf" id="shelf">
+  <div class="shelf-row">
+    <div class="books-grid">
+      {% for book in site.data.books %}
+      <div class="book-item" style="animation-delay: {{ forloop.index0 | times: 30 }}ms">
+        <img
+          src="https://covers.openlibrary.org/b/isbn/{{ book.isbn }}-M.jpg"
+          alt="{{ book.title }}"
+          loading="lazy"
+          onerror="this.style.display='none';var p=this.parentNode;if(!p.querySelector('.book-placeholder')){var d=document.createElement('div');d.className='book-placeholder';d.textContent=this.alt;p.prepend(d);}"
+        >
+        <div class="book-tooltip">
+          <b>{{ book.title }}</b><span>{{ book.author }}</span>
+        </div>
+        <div class="spine-label">
+          <span class="spine-label__title">{{ book.title }}</span>
+          <span class="spine-label__author">{{ book.author }}</span>
+        </div>
+      </div>
+      {% endfor %}
+    </div>
+  </div>
+</div>
 
 <script>
-const books = [
-  { title: "Liberty, Equality, Fraternity",    author: "James Fitzjames Stephen",   isbn: "0865971358" },
-  { title: "Beethoven",                         author: "Maynard Solomon",            isbn: "0028706439" },
-  { title: "1939: The Last World of the Fair",  author: "David Gelernter",            isbn: "0684831392" },
-  { title: "The House of Intellect",            author: "Jacques Barzun",             isbn: "0060970308" },
-  { title: "Don Quixote",                       author: "Miguel de Cervantes",        isbn: "0060934344" },
-  { title: "The True Believer",                 author: "Eric Hoffer",                isbn: "0060505915" },
-  { title: "The Long Loneliness",               author: "Dorothy Day",                isbn: "0060617519" },
-  { title: "Confessions of a 20th-C Pilgrim",  author: "Malcolm Muggeridge",         isbn: "0060657685" },
-  { title: "The Gulag Archipelago",             author: "Aleksandr Solzhenitsyn",     isbn: "0061253723" },
-  { title: "Anathem",                           author: "Neal Stephenson",            isbn: "0061492302" },
-  { title: "The First Circle",                  author: "Aleksandr Solzhenitsyn",     isbn: "0061340766" },
-  { title: "Paul: A Biography",                 author: "N.T. Wright",                isbn: "0062279246" },
-  { title: "Road to Disaster",                  author: "Brian VanDeMark",            isbn: "0316415383" },
-  { title: "Till We Have Faces",                author: "C.S. Lewis",                 isbn: "0156904365" },
-  { title: "C.S. Lewis Signature Classics",     author: "C.S. Lewis",                isbn: "0060653191" },
-  { title: "With God in Russia",                author: "Walter J. Ciszek",           isbn: "0898700620" },
-  { title: "The Perfectionists",                author: "Simon Winchester",           isbn: "0062655639" },
-  { title: "The Good Soldier \u0160vejk",       author: "Jaroslav Ha\u0161ek",        isbn: "0140449248" },
-  { title: "From Puritanism to Postmodernism",  author: "Ruland & Bradbury",          isbn: "0140174265" },
-  { title: "Cadillac Desert",                   author: "Marc Reisner",               isbn: "0140178936" },
-  { title: "The Odyssey",                       author: "Homer (tr. Robert Fagles)",  isbn: "0140268863" },
-];
-
-const COLS = 7, GAP = 5;
 let spineMode = false;
-
 const shelf = document.getElementById('shelf');
 const coverBtn = document.getElementById('coverBtn');
 const spineBtn = document.getElementById('spineBtn');
 
-function makeBookItem(book, delay) {
-  const item = document.createElement('div');
-  item.className = 'book-item';
-  item.style.animationDelay = delay + 'ms';
-
-  const img = document.createElement('img');
-  img.alt = book.title;
-  img.loading = 'lazy';
-  img.src = 'https://covers.openlibrary.org/b/isbn/' + book.isbn + '-M.jpg';
-  img.onerror = function() {
-    this.style.display = 'none';
-    if (!item.querySelector('.book-placeholder')) {
-      const ph = document.createElement('div');
-      ph.className = 'book-placeholder';
-      ph.textContent = book.title;
-      item.prepend(ph);
-    }
-  };
-
-  const tooltip = document.createElement('div');
-  tooltip.className = 'book-tooltip';
-  tooltip.innerHTML = '<b>' + book.title + '</b><span>' + book.author + '</span>';
-
-  const spineLabel = document.createElement('div');
-  spineLabel.className = 'spine-label';
-  spineLabel.innerHTML =
-    '<span class="spine-label__title">' + book.title + '</span>' +
-    '<span class="spine-label__author">' + book.author + '</span>';
-
+document.querySelectorAll('.book-item').forEach(function(item) {
   item.addEventListener('click', function() {
     if (!spineMode) return;
-    var text = book.title + ' — ' + book.author;
-    navigator.clipboard.writeText(text).then(function() {
-      spineLabel.style.opacity = '0.4';
-      setTimeout(function() { spineLabel.style.opacity = ''; }, 400);
+    var title = item.querySelector('.spine-label__title').textContent;
+    var author = item.querySelector('.spine-label__author').textContent;
+    navigator.clipboard.writeText(title + ' \u2014 ' + author).then(function() {
+      var label = item.querySelector('.spine-label');
+      label.style.opacity = '0.4';
+      setTimeout(function() { label.style.opacity = ''; }, 400);
     });
   });
-
-  item.appendChild(img);
-  item.appendChild(tooltip);
-  item.appendChild(spineLabel);
-  return item;
-}
-
-function buildCoverShelf() {
-  shelf.innerHTML = '';
-  shelf.classList.remove('spine-mode', 'no-shelves');
-  var row = document.createElement('div');
-  row.className = 'shelf-row';
-  var grid = document.createElement('div');
-  grid.className = 'books-grid';
-  books.forEach(function(book, i) {
-    grid.appendChild(makeBookItem(book, i * 30));
-  });
-  row.appendChild(grid);
-  shelf.appendChild(row);
-}
-
-function buildSpineShelf() {
-  shelf.innerHTML = '';
-  shelf.classList.add('spine-mode');
-  var row = document.createElement('div');
-  row.className = 'shelf-row';
-  var grid = document.createElement('div');
-  grid.className = 'books-grid';
-  books.forEach(function(book, i) { grid.appendChild(makeBookItem(book, 0)); });
-  row.appendChild(grid);
-  shelf.appendChild(row);
-}
-
-buildCoverShelf();
+});
 
 coverBtn.addEventListener('click', function() {
-  if (spineMode) { spineMode = false; coverBtn.classList.add('active'); spineBtn.classList.remove('active'); buildCoverShelf(); }
+  if (spineMode) {
+    spineMode = false;
+    shelf.classList.remove('spine-mode');
+    coverBtn.classList.add('active');
+    spineBtn.classList.remove('active');
+  }
 });
 spineBtn.addEventListener('click', function() {
-  if (!spineMode) { spineMode = true; spineBtn.classList.add('active'); coverBtn.classList.remove('active'); buildSpineShelf(); }
+  if (!spineMode) {
+    spineMode = true;
+    shelf.classList.add('spine-mode');
+    spineBtn.classList.add('active');
+    coverBtn.classList.remove('active');
+  }
 });
 </script>
