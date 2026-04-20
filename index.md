@@ -48,12 +48,18 @@ permalink: /
 
 .bookshelf { position: relative; }
 .books-header, .bookshelf {
-  width: 75vw;
+  width: 100vw;
   position: relative;
   left: 50%;
   transform: translateX(-50%);
-  padding: 0 24px;
+  padding: 0 16px;
   box-sizing: border-box;
+}
+@media (min-width: 600px) {
+  .books-header, .bookshelf {
+    width: 50vw;
+    padding: 0 24px;
+  }
 }
 .shelf-row { position: relative; }
 .shelf-row::after {
@@ -65,7 +71,7 @@ permalink: /
   margin-top: 2px;
 }
 .no-shelves .shelf-row::after { display: none !important; }
-.books-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(80px, 1fr)); gap: 5px; }
+.books-grid { display: grid; grid-template-columns: repeat(2, 1fr); gap: 5px; }
 @media (min-width: 600px) {
   .books-grid { grid-template-columns: repeat(7, 1fr); }
 }
@@ -238,20 +244,15 @@ function makeBookItem(book, delay) {
 function buildCoverShelf() {
   shelf.innerHTML = '';
   shelf.classList.remove('spine-mode', 'no-shelves');
-  var rows = [];
-  for (var i = 0; i < books.length; i += COLS) rows.push(books.slice(i, i + COLS));
-  rows.forEach(function(rowBooks, ri) {
-    var row = document.createElement('div');
-    row.className = 'shelf-row';
-    var grid = document.createElement('div');
-    grid.className = 'books-grid';
-    grid.style.gap = GAP + 'px';
-    rowBooks.forEach(function(book, bi) {
-      grid.appendChild(makeBookItem(book, (ri * COLS + bi) * 30));
-    });
-    row.appendChild(grid);
-    shelf.appendChild(row);
+  var row = document.createElement('div');
+  row.className = 'shelf-row';
+  var grid = document.createElement('div');
+  grid.className = 'books-grid';
+  books.forEach(function(book, i) {
+    grid.appendChild(makeBookItem(book, i * 30));
   });
+  row.appendChild(grid);
+  shelf.appendChild(row);
 }
 
 function buildSpineShelf() {
