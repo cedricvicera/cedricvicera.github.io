@@ -176,7 +176,7 @@ const books = [
   { title: "The Odyssey",                       author: "Homer (tr. Robert Fagles)",  isbn: "0140268863" },
 ];
 
-const COLS = 5, GAP = 5;
+const COLS = 7, GAP = 5;
 let spineMode = false;
 
 const shelf = document.getElementById('shelf');
