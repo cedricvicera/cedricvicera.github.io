@@ -57,7 +57,7 @@ permalink: /
   margin-top: 2px;
 }
 .no-shelves .shelf-row::after { display: none !important; }
-.books-grid { display: grid; grid-template-columns: repeat(7, 1fr); gap: 5px; }
+.books-grid { display: grid; grid-template-columns: repeat(5, 1fr); gap: 5px; }
 
 .book-item {
   position: relative; cursor: pointer; border-radius: 2px;
@@ -173,7 +173,7 @@ const books = [
   { title: "The Odyssey",                       author: "Homer (tr. Robert Fagles)",  isbn: "0140268863" },
 ];
 
-const COLS = 7, GAP = 5;
+const COLS = 5, GAP = 5;
 let spineMode = false;
 
 const shelf = document.getElementById('shelf');
@@ -208,6 +208,15 @@ function makeBookItem(book, delay) {
   spineLabel.innerHTML =
     '<span class="spine-label__title">' + book.title + '</span>' +
     '<span class="spine-label__author">' + book.author + '</span>';
+
+  item.addEventListener('click', function() {
+    if (!spineMode) return;
+    var text = book.title + ' — ' + book.author;
+    navigator.clipboard.writeText(text).then(function() {
+      spineLabel.style.opacity = '0.4';
+      setTimeout(function() { spineLabel.style.opacity = ''; }, 400);
+    });
+  });
 
   item.appendChild(img);
   item.appendChild(tooltip);
