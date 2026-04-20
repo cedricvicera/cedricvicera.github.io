@@ -57,7 +57,10 @@ permalink: /
   margin-top: 2px;
 }
 .no-shelves .shelf-row::after { display: none !important; }
-.books-grid { display: grid; grid-template-columns: repeat(5, 1fr); gap: 5px; }
+.books-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(80px, 1fr)); gap: 5px; }
+@media (min-width: 600px) {
+  .books-grid { grid-template-columns: repeat(7, 1fr); }
+}
 
 .book-item {
   position: relative; cursor: pointer; border-radius: 2px;
@@ -234,7 +237,6 @@ function buildCoverShelf() {
     row.className = 'shelf-row';
     var grid = document.createElement('div');
     grid.className = 'books-grid';
-    grid.style.gridTemplateColumns = 'repeat(' + COLS + ', 1fr)';
     grid.style.gap = GAP + 'px';
     rowBooks.forEach(function(book, bi) {
       grid.appendChild(makeBookItem(book, (ri * COLS + bi) * 30));
