@@ -47,6 +47,14 @@ permalink: /
 .view-btn svg { display: block; }
 
 .bookshelf { position: relative; }
+.books-header, .bookshelf {
+  width: 100vw;
+  position: relative;
+  left: 50%;
+  transform: translateX(-50%);
+  padding: 0 24px;
+  box-sizing: border-box;
+}
 .shelf-row { position: relative; }
 .shelf-row::after {
   content: '';
