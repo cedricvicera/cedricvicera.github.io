@@ -48,7 +48,7 @@ permalink: /
 
 .bookshelf { position: relative; }
 .books-header, .bookshelf {
-  width: 100vw;
+  width: 50vw;
   position: relative;
   left: 50%;
   transform: translateX(-50%);
