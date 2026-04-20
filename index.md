@@ -51,16 +51,6 @@ permalink: /
   width: 100%;
   box-sizing: border-box;
 }
-.shelf-row { position: relative; }
-.shelf-row::after {
-  content: '';
-  display: block;
-  height: 3px;
-  background: linear-gradient(180deg, #d4cfc9 0%, transparent 100%);
-  border-radius: 0 0 2px 2px;
-  margin-top: 2px;
-}
-.no-shelves .shelf-row::after { display: none !important; }
 .books-grid { display: grid; grid-template-columns: repeat(2, 1fr); gap: 10px; }
 @media (min-width: 600px) {
   .books-grid { grid-template-columns: repeat(7, 1fr); }
@@ -103,7 +93,6 @@ permalink: /
 }
 
 /* Spine mode */
-.bookshelf.spine-mode .shelf-row::after { display: none; }
 .bookshelf.spine-mode .books-grid { grid-template-columns: 1fr; gap: 0; }
 .bookshelf.spine-mode .book-item {
   aspect-ratio: unset; height: auto; border-radius: 0; overflow: visible;
@@ -154,26 +143,24 @@ permalink: /
 </div>
 
 <div class="bookshelf" id="shelf">
-  <div class="shelf-row">
-    <div class="books-grid">
-      {% for book in site.data.books %}
-      <div class="book-item" style="animation-delay: {{ forloop.index0 | times: 30 }}ms">
-        <img
-          src="https://covers.openlibrary.org/b/isbn/{{ book.isbn }}-M.jpg"
-          alt="{{ book.title }}"
-          loading="lazy"
-          onerror="this.style.display='none';var p=this.parentNode;if(!p.querySelector('.book-placeholder')){var d=document.createElement('div');d.className='book-placeholder';d.textContent=this.alt;p.prepend(d);}"
-        >
-        <div class="book-tooltip">
-          <b>{{ book.title }}</b><span>{{ book.author }}</span>
-        </div>
-        <div class="spine-label">
-          <span class="spine-label__title">{{ book.title }}</span>
-          <span class="spine-label__author">{{ book.author }}</span>
-        </div>
+  <div class="books-grid">
+    {% for book in site.data.books %}
+    <div class="book-item" style="animation-delay: {{ forloop.index0 | times: 30 }}ms">
+      <img
+        src="https://covers.openlibrary.org/b/isbn/{{ book.isbn }}-M.jpg"
+        alt="{{ book.title }}"
+        loading="lazy"
+        onerror="this.style.display='none';var p=this.parentNode;if(!p.querySelector('.book-placeholder')){var d=document.createElement('div');d.className='book-placeholder';d.textContent=this.alt;p.prepend(d);}"
+      >
+      <div class="book-tooltip">
+        <b>{{ book.title }}</b><span>{{ book.author }}</span>
       </div>
-      {% endfor %}
+      <div class="spine-label">
+        <span class="spine-label__title">{{ book.title }}</span>
+        <span class="spine-label__author">{{ book.author }}</span>
+      </div>
     </div>
+    {% endfor %}
   </div>
 </div>
 
