@@ -39,21 +39,21 @@ permalink: /
 .view-btn:hover { color: #1c1c1c; }
 .view-btn svg { display: block; }
 
-/* ── Breakout: escape the 600px layout to ~920px ── */
+/* ── Breakout: escape the 600px layout to ~1050px ── */
 .books-breakout {
   box-sizing: border-box;
 }
 .books-breakout.cover-mode {
-  width: min(920px, 100vw);
-  margin-left: calc((min(600px, 100vw) - min(920px, 100vw)) / 2 - 15px);
-  padding: 0 10px;
+  width: min(1050px, 100vw);
+  margin-left: calc((min(600px, 100vw) - min(1050px, 100vw)) / 2 - 15px);
+  padding: 0 15px;
 }
 
 /* ── Cover grid ── */
 .books-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(120px, 1fr));
-  gap: 8px;
+  grid-template-columns: repeat(auto-fill, minmax(135px, 1fr));
+  gap: 12px;
 }
 
 /* ── Book tile ── */
@@ -70,9 +70,10 @@ permalink: /
 }
 .book-item:hover { transform: translateY(-6px) scale(1.04); z-index: 10; }
 
-/* ── Cover image wrapper: owns the aspect-ratio so img height: 100% always resolves ── */
+/* ── Cover image wrapper ── */
 .book-cover-wrap {
   width: 100%; aspect-ratio: 2/3;
+  display: flex;
   border-radius: 6px; overflow: hidden;
   background: #d6d3cf;
   box-shadow: 0 0 0 1px rgba(0,0,0,0.1);
@@ -81,7 +82,11 @@ permalink: /
 .book-item:hover .book-cover-wrap {
   box-shadow: 0 0 0 1px rgba(0,0,0,0.1), 0 12px 24px rgba(0,0,0,0.15);
 }
-.book-cover-wrap img { width: 100%; height: 100%; object-fit: cover; display: block; }
+.book-cover-wrap img {
+  width: 100%; height: 100%; object-fit: cover; display: block;
+  border-radius: 6px; /* direct radius on img — Safari overflow:hidden fix */
+  flex-shrink: 0;
+}
 .book-cover-wrap .book-placeholder {
   width: 100%; height: 100%; display: flex; align-items: center; justify-content: center;
   padding: 6px; text-align: center; font-size: 0.45rem; color: #5c5c5c; line-height: 1.3;
