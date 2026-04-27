@@ -72,8 +72,9 @@ permalink: /
 
 /* ── Cover image wrapper ── */
 .book-cover-wrap {
-  width: 100%; aspect-ratio: 2/3;
-  display: flex;
+  position: relative;
+  width: 100%;
+  padding-top: 150%; /* 3÷2 = 150%: creates a guaranteed 2:3 box */
   border-radius: 6px; overflow: hidden;
   background: #d6d3cf;
   box-shadow: 0 0 0 1px rgba(0,0,0,0.1);
@@ -83,12 +84,14 @@ permalink: /
   box-shadow: 0 0 0 1px rgba(0,0,0,0.1), 0 12px 24px rgba(0,0,0,0.15);
 }
 .book-cover-wrap img {
-  width: 100%; height: 100%; object-fit: cover; display: block;
-  border-radius: 6px; /* direct radius on img — Safari overflow:hidden fix */
-  flex-shrink: 0;
+  position: absolute;
+  top: 0; left: 0; width: 100%; height: 100%;
+  object-fit: cover; display: block;
 }
 .book-cover-wrap .book-placeholder {
-  width: 100%; height: 100%; display: flex; align-items: center; justify-content: center;
+  position: absolute;
+  top: 0; left: 0; width: 100%; height: 100%;
+  display: flex; align-items: center; justify-content: center;
   padding: 6px; text-align: center; font-size: 0.45rem; color: #5c5c5c; line-height: 1.3;
 }
 
