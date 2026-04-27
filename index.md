@@ -58,7 +58,7 @@ permalink: /
 
 /* ── Book tile ── */
 .book-item {
-  position: relative; cursor: pointer; aspect-ratio: 2/3;
+  position: relative; cursor: pointer;
   overflow: visible; /* keep visible so tooltip escapes */
   transform-origin: bottom center;
   transition: transform 0.2s cubic-bezier(.22,.68,0,1.2);
@@ -70,9 +70,9 @@ permalink: /
 }
 .book-item:hover { transform: translateY(-6px) scale(1.04); z-index: 10; }
 
-/* ── Cover image wrapper: absolute fill so height resolves correctly ── */
+/* ── Cover image wrapper: owns the aspect-ratio so img height: 100% always resolves ── */
 .book-cover-wrap {
-  position: absolute; inset: 0;
+  width: 100%; aspect-ratio: 2/3;
   border-radius: 6px; overflow: hidden;
   background: #d6d3cf;
   box-shadow: 0 0 0 1px rgba(0,0,0,0.1);
@@ -106,7 +106,7 @@ permalink: /
 /* ── Spine mode ── */
 .bookshelf.spine-mode .books-grid { grid-template-columns: 1fr; gap: 0; }
 .bookshelf.spine-mode .book-item {
-  aspect-ratio: unset; height: auto; overflow: visible; animation: none;
+  height: auto; overflow: visible; animation: none;
   border-bottom: 1px solid #d6d6d6; transition: background 0.15s;
 }
 .bookshelf.spine-mode .book-item:first-child { border-top: 1px solid #d6d6d6; }
