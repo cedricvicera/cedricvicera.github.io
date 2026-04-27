@@ -58,7 +58,8 @@ permalink: /
 
 .book-item {
   position: relative; cursor: pointer; border-radius: 6px;
-  overflow: visible; aspect-ratio: 2/3; background: #e0dbd5;
+  overflow: hidden; aspect-ratio: 2/3; background: #d6d3cf;
+  box-shadow: 0 0 0 1px rgba(0,0,0,0.1);
   transform-origin: bottom center;
   transition: transform 0.2s cubic-bezier(.22,.68,0,1.2), box-shadow 0.2s ease;
   animation: bookIn 0.4s both ease-out;
@@ -69,10 +70,10 @@ permalink: /
 }
 .book-item:hover {
   transform: translateY(-6px) scale(1.04);
-  box-shadow: 0 12px 24px rgba(0,0,0,0.18);
+  box-shadow: 0 0 0 1px rgba(0,0,0,0.1), 0 12px 24px rgba(0,0,0,0.18);
   z-index: 10;
 }
-.book-item img { width: 100%; height: 100%; object-fit: cover; display: block; border-radius: 6px; }
+.book-item img { width: 100%; height: 100%; object-fit: cover; display: block; }
 .book-tooltip {
   position: absolute; bottom: calc(100% + 8px); left: 50%; transform: translateX(-50%);
   background: #1c1c1c; color: white; padding: 5px 8px; border-radius: 4px;
@@ -96,7 +97,7 @@ permalink: /
 .bookshelf.spine-mode .books-grid { grid-template-columns: 1fr; gap: 0; }
 .bookshelf.spine-mode .book-item {
   aspect-ratio: unset; height: auto; border-radius: 0; overflow: visible;
-  background: none !important; animation: none;
+  background: none !important; box-shadow: none !important; animation: none;
   border-bottom: 1px solid #d6d6d6; transition: background 0.15s;
 }
 .bookshelf.spine-mode .book-item:first-child { border-top: 1px solid #d6d6d6; }
@@ -147,10 +148,11 @@ permalink: /
     {% for book in site.data.books %}
     <div class="book-item" style="animation-delay: {{ forloop.index0 | times: 30 }}ms">
       <img
-        src="https://covers.openlibrary.org/b/isbn/{{ book.isbn }}-M.jpg"
+        src="{{ '/assets/images/books/' | append: book.isbn | append: '.jpg' | relative_url }}"
+        data-fallback="https://covers.openlibrary.org/b/isbn/{{ book.isbn }}-L.jpg"
         alt="{{ book.title }}"
         loading="lazy"
-        onerror="this.style.display='none';var p=this.parentNode;if(!p.querySelector('.book-placeholder')){var d=document.createElement('div');d.className='book-placeholder';d.textContent=this.alt;p.prepend(d);}"
+        onerror="if(this.src!==this.dataset.fallback){this.src=this.dataset.fallback;}else{this.style.display='none';var p=this.parentNode;if(!p.querySelector('.book-placeholder')){var d=document.createElement('div');d.className='book-placeholder';d.textContent=this.alt;p.prepend(d);}}"
       >
       <div class="book-tooltip">
         <b>{{ book.title }}</b><span>{{ book.author }}</span>
