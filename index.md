@@ -135,6 +135,7 @@ permalink: /
 }
 </style>
 
+<div class="books-breakout cover-mode" id="books-breakout">
 <div class="books-header">
   <span class="books-label">Book recommendations</span>
   <div class="view-toggle">
@@ -155,8 +156,6 @@ permalink: /
     </button>
   </div>
 </div>
-
-<div class="books-breakout cover-mode" id="books-breakout">
 <div class="bookshelf" id="shelf">
   <div class="books-grid">
     {% for book in site.data.books %}
