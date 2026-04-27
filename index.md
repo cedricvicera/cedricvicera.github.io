@@ -21,62 +21,73 @@ permalink: /
 <script src="{{ '/assets/js/wave-animation.js' | relative_url }}"></script>
 
 <style>
+/* ── Header row ── */
 .books-header {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  margin-bottom: 16px;
-  margin-top: 48px;
+  display: flex; align-items: center; justify-content: space-between;
+  margin-bottom: 16px; margin-top: 48px;
 }
 .books-label {
-  font-family: 'Inter', -apple-system, sans-serif;
-  font-size: 0.7rem;
-  font-weight: 400;
-  letter-spacing: 0.12em;
-  text-transform: uppercase;
-  color: #5c5c5c;
+  font-family: 'Inter', -apple-system, sans-serif; font-size: 0.7rem;
+  font-weight: 400; letter-spacing: 0.12em; text-transform: uppercase; color: #5c5c5c;
 }
 .view-toggle { display: flex; gap: 6px; align-items: center; }
 .view-btn {
   border: none; background: none; padding: 4px; cursor: pointer;
-  color: #d6d6d6; border-radius: 3px; display: flex; align-items: center;
-  transition: color 0.15s;
+  color: #d6d6d6; border-radius: 3px; display: flex; align-items: center; transition: color 0.15s;
 }
 .view-btn.active { color: #1b813e; }
 .view-btn:hover { color: #1c1c1c; }
 .view-btn svg { display: block; }
 
-.bookshelf { position: relative; }
-.books-header, .bookshelf {
-  width: 100%;
+/* ── Breakout: escape the 600px layout to ~920px ── */
+.books-breakout {
   box-sizing: border-box;
 }
-.books-grid { display: grid; grid-template-columns: repeat(2, 1fr); gap: 10px; }
-@media (min-width: 600px) {
-  .books-grid { grid-template-columns: repeat(7, 1fr); }
+.books-breakout.cover-mode {
+  width: min(920px, 100vw);
+  margin-left: calc((min(600px, 100vw) - min(920px, 100vw)) / 2 - 15px);
+  padding: 0 10px;
 }
 
+/* ── Cover grid ── */
+.books-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(120px, 1fr));
+  gap: 8px;
+}
+
+/* ── Book tile ── */
 .book-item {
-  position: relative; cursor: pointer; border-radius: 6px;
-  overflow: visible; aspect-ratio: 2/3;
+  position: relative; cursor: pointer; aspect-ratio: 2/3;
+  overflow: visible; /* keep visible so tooltip escapes */
   transform-origin: bottom center;
-  transition: transform 0.2s cubic-bezier(.22,.68,0,1.2), box-shadow 0.2s ease;
+  transition: transform 0.2s cubic-bezier(.22,.68,0,1.2);
   animation: bookIn 0.4s both ease-out;
 }
 @keyframes bookIn {
-  from { opacity: 0; transform: translateY(10px); }
+  from { opacity: 0; transform: translateY(8px); }
   to   { opacity: 1; transform: translateY(0); }
 }
-.book-item:hover {
-  transform: translateY(-6px) scale(1.04);
-  box-shadow: 0 12px 24px rgba(0,0,0,0.18);
-  z-index: 10;
-}
+.book-item:hover { transform: translateY(-6px) scale(1.04); z-index: 10; }
+
+/* ── Cover image wrapper: absolute fill so height resolves correctly ── */
 .book-cover-wrap {
-  width: 100%; height: 100%; border-radius: 6px; overflow: hidden;
-  background: #d6d3cf; box-shadow: 0 0 0 1px rgba(0,0,0,0.1);
+  position: absolute; inset: 0;
+  border-radius: 6px; overflow: hidden;
+  background: #d6d3cf;
+  box-shadow: 0 0 0 1px rgba(0,0,0,0.1);
+  transition: box-shadow 0.2s ease;
+}
+.book-item:hover .book-cover-wrap {
+  box-shadow: 0 0 0 1px rgba(0,0,0,0.1), 0 12px 24px rgba(0,0,0,0.15);
 }
 .book-cover-wrap img { width: 100%; height: 100%; object-fit: cover; display: block; }
+.book-cover-wrap .book-placeholder {
+  width: 100%; height: 100%; display: flex; align-items: center; justify-content: center;
+  padding: 6px; text-align: center; font-size: 0.45rem; color: #5c5c5c; line-height: 1.3;
+}
+
+/* ── Hover tooltip ── */
 .book-tooltip {
   position: absolute; bottom: calc(100% + 8px); left: 50%; transform: translateX(-50%);
   background: #1c1c1c; color: white; padding: 5px 8px; border-radius: 4px;
@@ -89,29 +100,20 @@ permalink: /
   border: 4px solid transparent; border-top-color: #1c1c1c;
 }
 .book-item:hover .book-tooltip { opacity: 1; }
-.book-tooltip b { display: block; font-weight: 600; font-size: 0.58rem; color: #ffffff; }
-.book-tooltip span { font-style: italic; color: #aaaaaa; font-size: 0.53rem; }
-.book-cover-wrap .book-placeholder {
-  width: 100%; height: 100%; display: flex; align-items: center; justify-content: center;
-  padding: 6px; text-align: center; font-size: 0.45rem; color: #5c5c5c; line-height: 1.3;
-}
+.book-tooltip b { display: block; font-weight: 600; font-size: 0.58rem; color: #fff; }
+.book-tooltip span { font-style: italic; color: #aaa; font-size: 0.53rem; }
 
-/* Spine mode */
+/* ── Spine mode ── */
 .bookshelf.spine-mode .books-grid { grid-template-columns: 1fr; gap: 0; }
 .bookshelf.spine-mode .book-item {
-  aspect-ratio: unset; height: auto; border-radius: 0; animation: none;
+  aspect-ratio: unset; height: auto; overflow: visible; animation: none;
   border-bottom: 1px solid #d6d6d6; transition: background 0.15s;
 }
 .bookshelf.spine-mode .book-item:first-child { border-top: 1px solid #d6d6d6; }
-.bookshelf.spine-mode .book-item:hover {
-  transform: none; box-shadow: none; background: rgba(0,0,0,0.025);
-}
+.bookshelf.spine-mode .book-item:hover { transform: none; background: rgba(0,0,0,0.025); }
 .bookshelf.spine-mode .book-cover-wrap { display: none; }
 .bookshelf.spine-mode .book-tooltip { display: none; }
-.spine-label {
-  display: none; align-items: baseline; padding: 10px 0;
-  pointer-events: none; position: static; inset: unset;
-}
+.spine-label { display: none; align-items: baseline; padding: 10px 0; }
 .bookshelf.spine-mode .spine-label { display: flex; }
 .spine-label__title {
   font-size: 0.8rem; font-family: 'Inter', -apple-system, sans-serif;
@@ -145,6 +147,7 @@ permalink: /
   </div>
 </div>
 
+<div class="books-breakout cover-mode" id="books-breakout">
 <div class="bookshelf" id="shelf">
   <div class="books-grid">
     {% for book in site.data.books %}
@@ -173,10 +176,12 @@ permalink: /
     {% endfor %}
   </div>
 </div>
+</div>
 
 <script>
 let spineMode = false;
 const shelf = document.getElementById('shelf');
+const breakout = document.getElementById('books-breakout');
 const coverBtn = document.getElementById('coverBtn');
 const spineBtn = document.getElementById('spineBtn');
 
@@ -197,6 +202,7 @@ coverBtn.addEventListener('click', function() {
   if (spineMode) {
     spineMode = false;
     shelf.classList.remove('spine-mode');
+    breakout.classList.add('cover-mode');
     coverBtn.classList.add('active');
     spineBtn.classList.remove('active');
   }
@@ -205,6 +211,7 @@ spineBtn.addEventListener('click', function() {
   if (!spineMode) {
     spineMode = true;
     shelf.classList.add('spine-mode');
+    breakout.classList.remove('cover-mode');
     spineBtn.classList.add('active');
     coverBtn.classList.remove('active');
   }
