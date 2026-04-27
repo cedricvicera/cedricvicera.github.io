@@ -2,14 +2,6 @@
   author: "Yukio Mishima"
   isbn: "0679433155"
 
-- title: "Infinite Jest"
-  author: "David Foster Wallace"
-  isbn: "0316066524"
-
-- title: "Hamlet"
-  author: "William Shakespeare"
-  isbn: "074347712X"
-
 - title: "The Ecological Approach to Visual Perception"
   author: "James J. Gibson"
   isbn: "1317579364"
@@ -21,6 +13,14 @@
 - title: "Reductionism in Art and Brain Science"
   author: "Eric R. Kandel"
   isbn: "0231542089"
+
+- title: "Infinite Jest"
+  author: "David Foster Wallace"
+  isbn: "0316066524"
+
+- title: "Hamlet"
+  author: "William Shakespeare"
+  isbn: "074347712X"
 
 - title: "American Psycho"
   author: "Bret Easton Ellis"
@@ -34,13 +34,37 @@
   author: "Daniel Immerwahr"
   isbn: "0374172145"
 
+- title: "The Elementary Particles"
+  author: "Michel Houellebecq"
+  isbn: "0375727019"
+
+- title: "Salt: A World History"
+  author: "Mark Kurlansky"
+  isbn: "0142001619"
+
 - title: "Human Smoke"
   author: "Nicholson Baker"
   isbn: "1416567844"
 
+- title: "The Crying of Lot 49"
+  author: "Thomas Pynchon"
+  isbn: "0397004184"
+
+- title: "The Gagging of God: Christianity Confronts Pluralism"
+  author: "D.A. Carson"
+  isbn: "031024286X"
+
+- title: "Stories of Your Life and Others"
+  author: "Ted Chiang"
+  isbn: "1101972122"
+
 - title: "Meaning in History"
   author: "Karl Löwith"
   isbn: "0226495558"
+
+- title: "The Autobiography of Malcolm X"
+  author: "Malcolm X, Alex Haley"
+  isbn: "0345294203"
 
 - title: "Being and Time"
   author: "Martin Heidegger"
@@ -62,9 +86,25 @@
   author: "Natasha Dow Schüll"
   isbn: "0691127557"
 
+- title: "Science Since Babylon"
+  author: "Derek de Solla Price"
+  isbn: "0300017987"
+
+- title: "The Revolt of the Elites and the Betrayal of Democracy"
+  author: "Christopher Lasch"
+  isbn: "0393313719"
+
 - title: "Ametora"
   author: "W. David Marx"
   isbn: "0465059732"
+
+- title: "Gilgamesh"
+  author: ""
+  isbn: "1624667724"
+
+- title: "Brave New World"
+  author: "Aldous Huxley"
+  isbn: "0060929871"
 
 - title: "A Random Walk Down Wall Street"
   author: "Burton G. Malkiel"
@@ -86,6 +126,10 @@
   author: "C. Thi Nguyen"
   isbn: "0190052082"
 
+- title: "Exhalation"
+  author: "Ted Chiang"
+  isbn: "B0DWTQM8GW"
+
 - title: "Jesus Through Middle Eastern Eyes"
   author: "Kenneth E. Bailey"
   isbn: "0830825681"
@@ -94,6 +138,27 @@
   author: "Steve Jobs"
   isbn: "B0DM4BZHH3"
 
+- title: "Buddhism: A Journey through History"
+  author: "Donald S. Lopez Jr."
+  isbn: "0300234260"
+
+- title: "Neither Poverty nor Riches: A Biblical Theology of Possessions"
+  author: "Craig L. Blomberg"
+  isbn: "0830826076"
+
 - title: "The Second Mountain"
   author: "David Brooks"
   isbn: "0812993268"
+
+- title: "Battle Hymn of the Tiger Mother"
+  author: "Amy Chua"
+  isbn: "0143120581"
+
+- title: "Fictions"
+  author: "Jorge Luis Borges"
+  isbn: "0141183845"
+
+- title: "Rationality for Mortals: How People Cope with Uncertainty"
+  author: "Gerd Gigerenzer"
+  isbn: "0199747091"
+
