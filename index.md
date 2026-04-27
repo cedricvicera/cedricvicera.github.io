@@ -58,8 +58,7 @@ permalink: /
 
 .book-item {
   position: relative; cursor: pointer; border-radius: 6px;
-  overflow: hidden; aspect-ratio: 2/3; background: #d6d3cf;
-  box-shadow: 0 0 0 1px rgba(0,0,0,0.1);
+  overflow: visible; aspect-ratio: 2/3;
   transform-origin: bottom center;
   transition: transform 0.2s cubic-bezier(.22,.68,0,1.2), box-shadow 0.2s ease;
   animation: bookIn 0.4s both ease-out;
@@ -70,10 +69,14 @@ permalink: /
 }
 .book-item:hover {
   transform: translateY(-6px) scale(1.04);
-  box-shadow: 0 0 0 1px rgba(0,0,0,0.1), 0 12px 24px rgba(0,0,0,0.18);
+  box-shadow: 0 12px 24px rgba(0,0,0,0.18);
   z-index: 10;
 }
-.book-item img { width: 100%; height: 100%; object-fit: cover; display: block; }
+.book-cover-wrap {
+  width: 100%; height: 100%; border-radius: 6px; overflow: hidden;
+  background: #d6d3cf; box-shadow: 0 0 0 1px rgba(0,0,0,0.1);
+}
+.book-cover-wrap img { width: 100%; height: 100%; object-fit: cover; display: block; }
 .book-tooltip {
   position: absolute; bottom: calc(100% + 8px); left: 50%; transform: translateX(-50%);
   background: #1c1c1c; color: white; padding: 5px 8px; border-radius: 4px;
@@ -88,7 +91,7 @@ permalink: /
 .book-item:hover .book-tooltip { opacity: 1; }
 .book-tooltip b { display: block; font-weight: 600; font-size: 0.58rem; color: #ffffff; }
 .book-tooltip span { font-style: italic; color: #aaaaaa; font-size: 0.53rem; }
-.book-placeholder {
+.book-cover-wrap .book-placeholder {
   width: 100%; height: 100%; display: flex; align-items: center; justify-content: center;
   padding: 6px; text-align: center; font-size: 0.45rem; color: #5c5c5c; line-height: 1.3;
 }
@@ -96,15 +99,14 @@ permalink: /
 /* Spine mode */
 .bookshelf.spine-mode .books-grid { grid-template-columns: 1fr; gap: 0; }
 .bookshelf.spine-mode .book-item {
-  aspect-ratio: unset; height: auto; border-radius: 0; overflow: visible;
-  background: none !important; box-shadow: none !important; animation: none;
+  aspect-ratio: unset; height: auto; border-radius: 0; animation: none;
   border-bottom: 1px solid #d6d6d6; transition: background 0.15s;
 }
 .bookshelf.spine-mode .book-item:first-child { border-top: 1px solid #d6d6d6; }
 .bookshelf.spine-mode .book-item:hover {
-  transform: none; box-shadow: none; background: rgba(0,0,0,0.025) !important;
+  transform: none; box-shadow: none; background: rgba(0,0,0,0.025);
 }
-.bookshelf.spine-mode .book-item img { display: none; }
+.bookshelf.spine-mode .book-cover-wrap { display: none; }
 .bookshelf.spine-mode .book-tooltip { display: none; }
 .spine-label {
   display: none; align-items: baseline; padding: 10px 0;
@@ -147,13 +149,19 @@ permalink: /
   <div class="books-grid">
     {% for book in site.data.books %}
     <div class="book-item" style="animation-delay: {{ forloop.index0 | times: 30 }}ms">
-      <img
-        src="{{ '/assets/images/books/' | append: book.isbn | append: '.jpg' | relative_url }}"
-        data-fallback="https://covers.openlibrary.org/b/isbn/{{ book.isbn }}-L.jpg"
-        alt="{{ book.title }}"
-        loading="lazy"
-        onerror="if(this.src!==this.dataset.fallback){this.src=this.dataset.fallback;}else{this.style.display='none';var p=this.parentNode;if(!p.querySelector('.book-placeholder')){var d=document.createElement('div');d.className='book-placeholder';d.textContent=this.alt;p.prepend(d);}}"
-      >
+      <div class="book-cover-wrap">
+        {% if book.cover %}
+          {% assign cover_file = book.cover %}
+        {% else %}
+          {% assign cover_file = book.isbn | append: '.jpg' %}
+        {% endif %}
+        <img
+          src="{{ '/assets/images/books/' | append: cover_file | relative_url }}"
+          alt="{{ book.title }}"
+          loading="lazy"
+          onerror="this.style.display='none';var p=this.parentNode;if(!p.querySelector('.book-placeholder')){var d=document.createElement('div');d.className='book-placeholder';d.textContent='{{ book.title }}';p.appendChild(d);}"
+        >
+      </div>
       <div class="book-tooltip">
         <b>{{ book.title }}</b><span>{{ book.author }}</span>
       </div>
