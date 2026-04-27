@@ -53,7 +53,7 @@ permalink: /
 .books-grid {
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(135px, 1fr));
-  gap: 8px; /* Originally 12px */
+  gap: 12px;
 }
 
 /* ── Book tile ── */
