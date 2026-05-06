@@ -54,10 +54,6 @@
   author: "D.A. Carson"
   isbn: "031024286X"
 
-- title: "Stories of Your Life and Others"
-  author: "Ted Chiang"
-  isbn: "1101972122"
-
 - title: "Meaning in History"
   author: "Karl Löwith"
   isbn: "0226495558"
@@ -165,4 +161,8 @@
 - title: "War, Progress, and the End of History: Three Conversations, Including a Short Story of the Anti-Christ"
   author: "Vladimir Solovyov"
   isbn: "0940262355"
+
+- title: "The Iliad"
+  author: "Homer"
+  isbn: "9780140275360"
 
