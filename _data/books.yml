@@ -6,7 +6,7 @@
   author: "James J. Gibson"
   isbn: "1317579364"
 
-- title: "The Case Against Education"
+- title: "The Case Against Education: Why the Education System Is a Waste of Time and Money"
   author: "Bryan Caplan"
   isbn: "0691174652"
 
@@ -26,11 +26,11 @@
   author: "Bret Easton Ellis"
   isbn: "0679735771"
 
-- title: "We Become What We Worship"
+- title: "We Become What We Worship: A Biblical Theology of Idolatry"
   author: "Gregory K. Beale"
   isbn: "083082877X"
 
-- title: "How to Hide an Empire"
+- title: "How to Hide an Empire: A History of the Greater United States"
   author: "Daniel Immerwahr"
   isbn: "0374172145"
 
@@ -42,7 +42,7 @@
   author: "Mark Kurlansky"
   isbn: "0142001619"
 
-- title: "Human Smoke"
+- title: "Human Smoke: The Beginnings of World War II, the End of Civilization"
   author: "Nicholson Baker"
   isbn: "1416567844"
 
@@ -54,7 +54,7 @@
   author: "D.A. Carson"
   isbn: "031024286X"
 
-- title: "Meaning in History"
+- title: "Meaning in History: The Theological Implications of the Philosophy of History"
   author: "Karl Löwith"
   isbn: "0226495558"
 
@@ -74,7 +74,7 @@
   author: "Jean Baudrillard"
   isbn: "0472065211"
 
-- title: "From Third World to First"
+- title: "From Third World to First: The Singapore Story: 1965-2000"
   author: "Lee Kuan Yew"
   isbn: "0060197765"
 
@@ -90,7 +90,7 @@
   author: "Christopher Lasch"
   isbn: "0393313719"
 
-- title: "Ametora"
+- title: "Ametora: How Japan Saved American Style"
   author: "W. David Marx"
   isbn: "0465059732"
 
@@ -102,7 +102,7 @@
   author: "Aldous Huxley"
   isbn: "0060929871"
 
-- title: "A Random Walk Down Wall Street"
+- title: "A Random Walk Down Wall Street: The Time-Tested Strategy for Successful Investing"
   author: "Burton G. Malkiel"
   isbn: "1324002182"
 
@@ -110,7 +110,7 @@
   author: "Soetsu Yanagi"
   isbn: "0141983183"
 
-- title: "Unreasonable Hospitality"
+- title: "Unreasonable Hospitality: The Remarkable Power of Giving People More Than They Expect"
   author: "Will Guidara"
   isbn: "0593418573"
 
@@ -122,7 +122,7 @@
   author: "C. Thi Nguyen"
   isbn: "0190052082"
 
-- title: "Exhalation"
+- title: "Exhalation: Stories"
   author: "Ted Chiang"
   isbn: "B0DWTQM8GW"
 
@@ -142,7 +142,7 @@
   author: "Craig L. Blomberg"
   isbn: "0830826076"
 
-- title: "The Second Mountain"
+- title: "The Second Mountain: The Quest for a Moral Life"
   author: "David Brooks"
   isbn: "0812993268"
 
@@ -150,7 +150,7 @@
   author: "Amy Chua"
   isbn: "0143120581"
 
-- title: "Fictions"
+- title: "Ficciones"
   author: "Jorge Luis Borges"
   isbn: "0141183845"
 
@@ -159,7 +159,6 @@
   isbn: "0199747091"
 
 - title: "War, Progress, and the End of History: Three Conversations, Including a Short Story of the Anti-Christ"
-  author: "Vladimir Solovyov"
   isbn: "0940262355"
 
 - title: "The Iliad"
