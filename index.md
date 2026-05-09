@@ -49,6 +49,12 @@ permalink: /
   margin-left: calc((min(600px, 100vw) - min(1050px, 100vw)) / 2 - 15px);
   padding: 0 15px;
 }
+.books-breakout:not(.cover-mode) {
+  max-width: 600px;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 0 15px;
+}
 
 /* ── Cover grid ── */
 .books-grid {
