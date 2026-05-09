@@ -12,8 +12,7 @@ permalink: /
   <!-- Content (no name since header has it) -->
   <div class="content">
     <div class="bio">
-      <p>I work in data science and analytics.</p>
-      <p>Previously, I studied philosophy and computer science.</p>
+      <p>I work in data science and analytics. Previously, I studied philosophy and computer science.</p>
     </div>
   </div>
 </div>
@@ -21,6 +20,8 @@ permalink: /
 <script src="{{ '/assets/js/wave-animation.js' | relative_url }}"></script>
 
 <style>
+.bio { font-size: 16px; }
+
 /* ── Header row ── */
 .books-header {
   display: flex; align-items: center; justify-content: space-between;
