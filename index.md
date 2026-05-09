@@ -47,6 +47,14 @@ permalink: /
   margin-right: auto;
   padding: 0 15px;
 }
+@media (max-width: 700px) {
+  .books-breakout.cover-mode {
+    width: auto;
+    margin-left: 0;
+    margin-right: 0;
+    padding: 0;
+  }
+}
 
 /* ── Cover grid ── */
 .books-grid {
