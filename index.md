@@ -12,7 +12,7 @@ permalink: /
   <!-- Content (no name since header has it) -->
   <div class="content">
     <div class="bio">
-      <p>I work in data science and analytics. Previously, I studied philosophy and computer science.</p>
+      <p>Immersing in literary, filmic, and technological landscapes.</p>
     </div>
   </div>
 </div>
