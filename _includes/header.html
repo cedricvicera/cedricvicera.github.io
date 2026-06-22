@@ -1,13 +1,6 @@
 <header class='header'>
-  <a class='header__title' href='{{ '/' | relative_url }}'>{{ site.title | escape }}</a>
-  <!--<p class='header__title' href="">{{ site.title | escape }}</a>-->
-  <nav class='header__nav'>
-      <!--<a class='header__nav__item' href='/'>Home</a>-->
-      <!--<a class='header__nav__item' href='/vicera_resume.pdf'>Resume</a>-->
-    <!--{% for page in site.pages %}
-      {% if page.title %}
-        <a class='header__nav__item' href='{{ page.url | relative_url }}'>{{ page.title | escape }}</a>
-      {% endif %}
-    {% endfor %}-->
+  <nav class='nav'>
+    <a class='nav__item' href='{{ '/' | relative_url }}#about' data-view='about'>About</a>
+    <a class='nav__item' href='{{ '/' | relative_url }}#reading' data-view='reading'>Reading Lists</a>
   </nav>
 </header>
