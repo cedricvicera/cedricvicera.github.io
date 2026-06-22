@@ -93,7 +93,7 @@ permalink: /
 </style>
 
 <section class="view about" data-view="about">
-  <p>I'm a data scientist working in AI risk and governance &mdash; building systems that monitor, assess, and quantify how risk shifts as AI evolves in real time, keeping agentic systems trustworthy at scale.</p>
+  <p>I'm a data scientist working in AI risk and governance, building systems that monitor, assess, and quantify how risk shifts as it evolves in real time, keeping agentic systems trustworthy at scale.</p>
 </section>
 
 <section class="view reading" data-view="reading">
