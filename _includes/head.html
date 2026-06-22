@@ -11,24 +11,12 @@
   <meta name="theme-color" content="#ffffff">
   {% seo %}
 
-  <!-- Import fonts: Inter (UI) + EB Garamond (body / serif) -->
+  <!-- EB Garamond (body / serif) -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@200;300;400;500;600;700&family=EB+Garamond:ital,wght@0,400;0,500;0,600;1,400;1,500&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400;0,500;0,600;1,400;1,500&display=swap" rel="stylesheet">
 
-  {% case site.blog_theme %}
-    {% when 'light' %}
-      <link rel='stylesheet' href='{{ '/assets/light.css' | relative_url }}'>
-    {% when 'dark' %}
-      <link rel='stylesheet' href='{{ '/assets/dark.css' | relative_url }}'>
-    {% when 'auto' %}
-      <link rel='stylesheet' href='{{ '/assets/light.css' | relative_url }}'>
-      <link rel='stylesheet' href='{{ '/assets/dark.css' | relative_url }}' media="(prefers-color-scheme: dark)">
-  {% endcase %}
-
-  <!-- Wave Animation CSS -->
-  <link rel='stylesheet' href='{{ '/assets/css/wave-animation.css' | relative_url }}'>
+  <link rel='stylesheet' href='{{ '/assets/light.css' | relative_url }}'>
 
   {% feed_meta %}
-  <!--{% include google_analytics.html %}-->
 </head>

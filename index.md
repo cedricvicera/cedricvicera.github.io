@@ -49,9 +49,8 @@ permalink: /
     color: var(--nav-inactive);
     transition: color 0.2s ease;
   }
-  /* `.nav .nav__item` outranks the global a:hover brightness filter */
-  .nav .nav__item:hover,
-  .nav .nav__item.active { color: var(--ink); filter: none; }
+  .nav__item:hover,
+  .nav__item.active { color: var(--ink); }
 
   .main { margin: 0; }
 
@@ -84,12 +83,9 @@ permalink: /
   }
   .lists li { font-size: clamp(1.12rem, 3.2vw, 1.24rem); line-height: 1.4; }
   .lists li a { color: var(--ink); text-decoration: none; transition: color 0.2s ease; }
-  .lists li a:hover { color: var(--accent); filter: none; }
+  .lists li a:hover { color: var(--accent); }
   .lists .sep { color: var(--faint); }
   .lists .author { color: var(--muted); }
-
-  /* base footer is empty here — keep it out of the way */
-  .footer { display: none; }
 </style>
 
 <section class="view about" data-view="about">

@@ -1,29 +1,12 @@
 title: Cedric Vicera
 author: Cedric Vicera
-url: "https://cedricvicera.com" # the base hostname & protocol for your site, e.g. http://example.com
+url: "https://cedricvicera.com"
 permalink: /:title
-#email:
-#lang: en
-#description:
-
-username: cedricvicera
-github_username: cedricvicera
-youtube_username: cedricvicera
-instagram_username: cedricvicera
-
-# date_format:
-
-# google_analytics:
-# disqus_shortname:
-
-blog_theme: light
 
 markdown: kramdown
 kramdown:
   input: GFM
 
 plugins:
- - jekyll-feed
- - jekyll-seo-tag
-
- 
+  - jekyll-feed
+  - jekyll-seo-tag
