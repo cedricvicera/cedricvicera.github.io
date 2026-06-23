@@ -25,6 +25,8 @@
       author: "Aldous Huxley"
     - title: "Addiction by Design: Machine Gambling in Las Vegas"
       author: "Natasha Dow Schüll"
+    - title: "Bullshit Jobs: A Theory"
+      author: "David Graeber"
 
 - name: "What Is Reality?"
   books:
@@ -51,8 +53,6 @@
       author: "Thomas Pynchon"
     - title: "Infinite Jest"
       author: "David Foster Wallace"
-    - title: "The Temple of the Golden Pavilion"
-      author: "Yukio Mishima"
 
 - name: "Making Meaning"
   books:
@@ -77,6 +77,8 @@
       author: "D.A. Carson"
     - title: "Neither Poverty nor Riches: A Biblical Theology of Possessions"
       author: "Craig L. Blomberg"
+    - title: "Spiritual Trauma: A Guide for Healing Your Heart From Church Hurts"
+      author: "Sean St. Jean"
 
 - name: "National Engineering"
   books:
@@ -86,6 +88,8 @@
       author: "Dan Wang"
     - title: "The Machiavellians: Defenders of Freedom"
       author: "James Burnham"
+    - title: "Walkable City: How Downtown Can Save America, One Step at a Time"
+      author: "Jeff Speck"
 
 - name: "American Mythos"
   books:
@@ -108,4 +112,11 @@
       author: "W. David Marx"
     - title: "Science Since Babylon"
       author: "Derek de Solla Price"
+
+- name: "Quiet Drift"
+  books:
+    - title: "Meditations in an Emergency"
+      author: "Frank O'Hara"
+    - title: "The Burnout Society"
+      author: "Byung-Chul Han"
 
