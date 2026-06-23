@@ -14,8 +14,6 @@
       author: "Vladimir Solovyov"
     - title: "The Elementary Particles"
       author: "Michel Houellebecq"
-    - title: "The Machiavellians: Defenders of Freedom"
-      author: "James Burnham"
 
 - name: "Capital Horror"
   books:
@@ -44,6 +42,8 @@
       author: "Gerd Gigerenzer"
     - title: "Exhalation: Stories"
       author: "Ted Chiang"
+    - title: "Being and Time"
+      author: "Martin Heidegger"
 
 - name: "Books Are Made of Books"
   books:
@@ -59,21 +59,9 @@
       author: "David Foster Wallace"
     - title: "The Temple of the Golden Pavilion"
       author: "Yukio Mishima"
-    - title: "Hamlet"
-      author: "William Shakespeare"
-    - title: "The Iliad"
-      author: "Homer"
-    - title: "Gilgamesh"
-      author: "Anonymous"
 
 - name: "The Affirmation of Life"
   books:
-    - title: "The Affirmation of Life: Nietzsche on Overcoming Nihilism"
-      author: "Bernard Reginster"
-    - title: "Being and Time"
-      author: "Martin Heidegger"
-    - title: "The Last Days of Socrates"
-      author: "Plato"
     - title: "The Second Mountain: The Quest for a Moral Life"
       author: "David Brooks"
     - title: "Make Something Wonderful: Steve Jobs in His Own Words"
@@ -83,8 +71,6 @@
 
 - name: "Living Theology"
   books:
-    - title: "You Are What You Love: The Spiritual Power of Habit"
-      author: "James K. A. Smith"
     - title: "We Become What We Worship: A Biblical Theology of Idolatry"
       author: "Gregory K. Beale"
     - title: "Paul: A Biography"
@@ -95,15 +81,15 @@
       author: "D.A. Carson"
     - title: "Neither Poverty nor Riches: A Biblical Theology of Possessions"
       author: "Craig L. Blomberg"
-    - title: "Buddhism: A Journey through History"
-      author: "Donald S. Lopez Jr."
 
-- name: "How Nations Rise"
+- name: "National Engineering"
   books:
     - title: "From Third World to First: The Singapore Story"
       author: "Lee Kuan Yew"
     - title: "Breakneck: China's Quest to Engineer the Future"
       author: "Dan Wang"
+    - title: "The Machiavellians: Defenders of Freedom"
+      author: "James Burnham"
 
 - name: "History Against the Grain"
   books:
