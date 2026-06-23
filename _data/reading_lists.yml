@@ -4,8 +4,6 @@
 
 - name: "Decline, Decay, Demise"
   books:
-    - title: "Western Self-Contempt: Oikophobia in the Decline of Civilizations"
-      author: "Benedict Beckeld"
     - title: "The Revolt of the Elites and the Betrayal of Democracy"
       author: "Christopher Lasch"
     - title: "Meaning in History: The Theological Implications of the Philosophy of History"
@@ -23,10 +21,10 @@
       author: "Mark Fisher"
     - title: "American Psycho"
       author: "Bret Easton Ellis"
-    - title: "Addiction by Design: Machine Gambling in Las Vegas"
-      author: "Natasha Dow Schüll"
     - title: "Brave New World"
       author: "Aldous Huxley"
+    - title: "Addiction by Design: Machine Gambling in Las Vegas"
+      author: "Natasha Dow Schüll"
 
 - name: "What Is Reality?"
   books:
@@ -40,15 +38,11 @@
       author: "C. Thi Nguyen"
     - title: "Rationality for Mortals: How People Cope with Uncertainty"
       author: "Gerd Gigerenzer"
-    - title: "Exhalation: Stories"
-      author: "Ted Chiang"
     - title: "Being and Time"
       author: "Martin Heidegger"
 
 - name: "Books Are Made of Books"
   books:
-    - title: "Books Are Made of Books: A Guide to Cormac McCarthy's Literary Influences"
-      author: "Michael Lynn Crews"
     - title: "Blood Meridian: Or the Evening Redness in the West"
       author: "Cormac McCarthy"
     - title: "Ficciones"
@@ -60,7 +54,7 @@
     - title: "The Temple of the Golden Pavilion"
       author: "Yukio Mishima"
 
-- name: "The Affirmation of Life"
+- name: "Making Meaning"
   books:
     - title: "The Second Mountain: The Quest for a Moral Life"
       author: "David Brooks"
@@ -68,6 +62,8 @@
       author: "Steve Jobs"
     - title: "The Beauty of Everyday Things"
       author: "Soetsu Yanagi"
+    - title: "Unreasonable Hospitality: The Remarkable Power of Giving People More Than They Expect"
+      author: "Will Guidara"
 
 - name: "Living Theology"
   books:
@@ -91,7 +87,7 @@
     - title: "The Machiavellians: Defenders of Freedom"
       author: "James Burnham"
 
-- name: "History Against the Grain"
+- name: "American Mythos"
   books:
     - title: "How to Hide an Empire: A History of the Greater United States"
       author: "Daniel Immerwahr"
@@ -101,8 +97,10 @@
       author: "Nicholson Baker"
     - title: "The Autobiography of Malcolm X"
       author: "Malcolm X & Alex Haley"
+    - title: "The Case Against Education: Why the Education System Is a Waste of Time and Money"
+      author: "Bryan Caplan"
 
-- name: "The World in One Thing"
+- name: "Narrow Histories"
   books:
     - title: "Salt: A World History"
       author: "Mark Kurlansky"
@@ -111,13 +109,3 @@
     - title: "Science Since Babylon"
       author: "Derek de Solla Price"
 
-- name: "Merit, Money, Mastery"
-  books:
-    - title: "The Case Against Education: Why the Education System Is a Waste of Time and Money"
-      author: "Bryan Caplan"
-    - title: "Battle Hymn of the Tiger Mother"
-      author: "Amy Chua"
-    - title: "A Random Walk Down Wall Street"
-      author: "Burton G. Malkiel"
-    - title: "Unreasonable Hospitality: The Remarkable Power of Giving People More Than They Expect"
-      author: "Will Guidara"
