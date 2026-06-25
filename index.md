@@ -12,7 +12,8 @@ permalink: /
     --ink-soft: #4a423a;
     --muted: #756a5d;
     --faint: #9a8c79;
-    --accent: #5c5a32;        /* deep olive — section headers & link hover */
+    --accent: #5c5a32;        /* deep olive — link hover */
+    --header: #33414f;        /* cool slate — reading-list section headers */
     --nav-inactive: #9a8c79;
   }
   body {
@@ -70,7 +71,7 @@ permalink: /
     font-size: clamp(1.18rem, 3.2vw, 1.32rem);
     font-weight: 600;
     letter-spacing: 0;
-    color: var(--accent);
+    color: var(--header);
     margin: 0 0 clamp(14px, 2.4vw, 18px);
   }
   .lists ul {
