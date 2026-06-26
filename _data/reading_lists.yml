@@ -66,7 +66,7 @@
     - title: "Unreasonable Hospitality: The Remarkable Power of Giving People More Than They Expect"
       author: "Will Guidara"
 
-- name: "Living Theology"
+- name: "A Living Sacrifice"
   books:
     - title: "We Become What We Worship: A Biblical Theology of Idolatry"
       author: "Gregory K. Beale"
@@ -80,6 +80,8 @@
       author: "Craig L. Blomberg"
     - title: "Spiritual Trauma: A Guide for Healing Your Heart From Church Hurts"
       author: "Sean St. Jean"
+    # - title: "You Are What You Love: The Spiritual Power of Habit"
+    #   author: "James K. A. Smith"
 
 - name: "National Engineering"
   books:
