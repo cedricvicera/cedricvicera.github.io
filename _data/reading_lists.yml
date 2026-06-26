@@ -1,6 +1,7 @@
 # Reading lists shown on the home page (Reading Lists view).
 # Each group has a `name` (themed header) and `books` (Title / Author rows).
 # Titles link to a Google search for the title.
+# Commeted out titles are suggested or currently reading works 
 
 - name: "Decline, Decay, Demise"
   books:
@@ -12,6 +13,8 @@
       author: "Vladimir Solovyov"
     - title: "The Elementary Particles"
       author: "Michel Houellebecq"
+    # - title: "The Decline of the West"
+    #   author: "Oswald Spengler"
 
 - name: "Capital Horror"
   books:
@@ -28,7 +31,7 @@
     - title: "Bullshit Jobs: A Theory"
       author: "David Graeber"
 
-- name: "What Is Reality?"
+- name: "The Doors of Perception"
   books:
     - title: "The Ecological Approach to Visual Perception"
       author: "James J. Gibson"
@@ -119,4 +122,8 @@
       author: "Frank O'Hara"
     - title: "The Burnout Society"
       author: "Byung-Chul Han"
+    # - title: "The Stories of John Cheever"
+    #   author: "John Cheever"
+    # - title: "Cathedral"
+    #   author: "Raymond Carver"
 
