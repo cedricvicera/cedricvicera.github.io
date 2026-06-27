@@ -1,6 +1,6 @@
 <header class='header'>
   <nav class='nav'>
-    <a class='nav__item' href='{{ '/' | relative_url }}#about' data-view='about'>About</a>
-    <a class='nav__item' href='{{ '/' | relative_url }}#reading' data-view='reading'>Reading Lists</a>
+    <a class='nav__item{% if page.url == "/" %} active{% endif %}' href='{{ '/' | relative_url }}'>About</a>
+    <a class='nav__item{% if page.url contains "reading" %} active{% endif %}' href='{{ '/reading/' | relative_url }}'>Reading Lists</a>
   </nav>
 </header>
