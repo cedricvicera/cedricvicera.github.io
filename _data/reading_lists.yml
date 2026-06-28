@@ -5,6 +5,8 @@
 
 - name: "Decline, Decay, Demise"
   books:
+    - title: "The Temple of the Golden Pavilion"
+      author: "Yukio Mishima"
     - title: "The Revolt of the Elites and the Betrayal of Democracy"
       author: "Christopher Lasch"
     - title: "Meaning in History: The Theological Implications of the Philosophy of History"
