@@ -1,6 +1,12 @@
 <style>
   /* ── Personal site design (inline so it ships with the page, never served
-        stale by the GitHub Pages CSS cache). Overrides the base light.css. ── */
+        stale by the GitHub Pages CSS cache). Overrides the base light.css.
+
+        The look is "plain type on a warm sheet, marked by hand": Helvetica
+        set quietly, with the page's structure drawn rather than styled — a
+        single pen line down the margin, a sketched underline under the
+        current page, a torn bottom edge. Every mark is a generated SVG path
+        (see _includes/marks.html) that inks itself in on load. ── */
   :root {
     --paper: #f8f4ec;
     --ink: #2a2520;
@@ -9,14 +15,28 @@
     --faint: #9a8c79;
     --accent: #5c5a32;        /* deep olive — section headers & link hover */
     --nav-inactive: #9a8c79;
+
+    --thread: #b9a273;        /* the pen line down the margin */
+    --mark-ink: #8f8463;      /* margin circles */
+    --tear: #d2c7b1;          /* torn edge of the sheet */
+
+    --gutter: clamp(38px, 8vw, 64px);
   }
+  html { height: 100%; }
   body {
+    position: relative;
+    min-height: 100%;
+    display: flex;
+    flex-direction: column;
     background-color: var(--paper);
     background-image: url('{{ '/assets/images/paper-texture.png' | relative_url }}');
     background-size: 500px 500px;
     background-repeat: repeat;
     color: var(--ink);
-    font-family: 'EB Garamond', Georgia, 'Times New Roman', serif;
+    /* No web font: Helvetica Neue is already on the machine, so type paints
+       on the first frame with nothing to download and no swap. */
+    font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    font-weight: 400;
     -webkit-font-smoothing: antialiased;
     text-rendering: optimizeLegibility;
   }
@@ -24,8 +44,54 @@
 
   /* Content column (override base .layout 600px) */
   .layout {
-    max-width: 660px;
-    padding: clamp(26px, 6vw, 60px) clamp(22px, 6vw, 34px) clamp(48px, 8vw, 88px);
+    flex: 1 0 auto;
+    width: 100%;
+    max-width: 700px;
+    margin: 0 auto;
+    padding: clamp(26px, 6vw, 60px) clamp(22px, 6vw, 34px) clamp(40px, 7vw, 72px) var(--gutter);
+  }
+
+  /* ── Ink marks ─────────────────────────────────────────────────────────
+     One rule inks any mark: every generated path carries pathLength="100",
+     so the same dash figures work whatever the stroke's real length. */
+  .sprite { position: absolute; width: 0; height: 0; overflow: hidden; }
+
+  .mark {
+    display: block;
+    overflow: visible;
+    fill: none;
+    stroke: currentColor;
+    stroke-dasharray: 100 101;
+    stroke-dashoffset: 100;
+    animation: ink 1.1s cubic-bezier(0.25, 0.6, 0.3, 1) forwards;
+    animation-delay: var(--d, 0s);
+  }
+  @keyframes ink { to { stroke-dashoffset: 0; } }
+
+  /* ── The thread ────────────────────────────────────────────────────────
+     One pen line, drawn down the margin of the sheet from the top of the page
+     to the torn edge at the bottom, where it stops because the paper does.
+     It sits beside the content column, so its left edge tracks that column. */
+  .spine {
+    position: absolute;
+    top: 0;
+    bottom: calc(clamp(14px, 3vw, 24px) + 6px);
+    left: calc(max(0px, 50% - 350px) + clamp(4px, 1.4vw, 14px));
+    width: 26px;
+    pointer-events: none;
+  }
+  .thread {
+    display: block;
+    width: 100%;
+    height: 100%;
+    color: var(--thread);
+    /* Stroke widths are in the mark's own units, so each is set to land at
+       roughly a 1px pen line once the symbol is scaled to its box. */
+    stroke-width: 2;
+    opacity: 0.85;
+    stroke-dasharray: 100 101;
+    stroke-dashoffset: 100;
+    animation: ink 3.4s cubic-bezier(0.3, 0.5, 0.2, 1) forwards;
   }
 
   /* Header / nav (override base centered .header) */
@@ -36,32 +102,58 @@
     text-align: left;
     padding: 0 0 clamp(34px, 7vw, 60px);
   }
-  .nav { display: flex; gap: 24px; align-items: baseline; flex-wrap: wrap; }
+  .nav { display: flex; gap: 26px; align-items: baseline; flex-wrap: wrap; }
   .nav__item {
-    font-family: 'EB Garamond', Georgia, 'Times New Roman', serif;
-    font-size: 1.05rem;
+    position: relative;
+    font-size: 0.92rem;
+    letter-spacing: 0.01em;
     text-decoration: none;
     color: var(--nav-inactive);
     transition: color 0.2s ease;
   }
   .nav__item:hover,
   .nav__item.active { color: var(--ink); }
+  .nav__item.active { font-weight: 500; }
+
+  /* Hand-drawn underline instead of a border: inked in under the current
+     page, sketched faintly under whatever the cursor is on. */
+  .nav__item .rule {
+    position: absolute;
+    left: -3px;
+    bottom: -7px;
+    width: calc(100% + 6px);
+    height: 6px;
+    color: var(--accent);
+    stroke-width: 0.9;
+    opacity: 0;
+    stroke-dashoffset: 0;
+    animation: none;
+    transition: opacity 0.25s ease;
+  }
+  .nav__item:hover .rule { opacity: 0.4; }
+  .nav__item.active .rule {
+    opacity: 0.75;
+    animation: ink 0.8s cubic-bezier(0.25, 0.6, 0.3, 1) 0.45s both;
+  }
 
   .main { margin: 0; }
 
+  /* ── About ─────────────────────────────────────────────────────────── */
   .about p {
-    font-size: clamp(1.18rem, 3.4vw, 1.32rem);
+    font-size: clamp(1.02rem, 2.7vw, 1.14rem);
+    letter-spacing: -0.004em;
     line-height: 1.72;
     color: var(--ink);
     margin: 0 0 1.1em;
   }
   .about p:last-child { margin-bottom: 0; }
 
+  /* ── Reading lists ─────────────────────────────────────────────────── */
   .lists { display: flex; flex-direction: column; gap: clamp(38px, 6vw, 54px); }
   .lists h2 {
-    font-size: clamp(1.18rem, 3.2vw, 1.32rem);
-    font-weight: 600;
-    letter-spacing: 0;
+    font-size: clamp(0.95rem, 2.5vw, 1.02rem);
+    font-weight: 500;
+    letter-spacing: 0.02em;
     color: var(--accent);
     margin: 0 0 clamp(14px, 2.4vw, 18px);
   }
@@ -73,9 +165,78 @@
     flex-direction: column;
     gap: clamp(11px, 2vw, 14px);
   }
-  .lists li { font-size: clamp(1.12rem, 3.2vw, 1.24rem); line-height: 1.4; }
-  .lists li a { color: var(--ink); text-decoration: none; transition: color 0.2s ease; }
-  .lists li a:hover { color: var(--accent); }
+  .lists li { font-size: clamp(0.94rem, 2.5vw, 1rem); line-height: 1.55; }
+  .lists li a {
+    color: var(--ink);
+    text-decoration: none;
+    /* A pen stroke drawn under the title on hover, rather than an underline.
+       The padding gives the stroke room to clear the descenders — backgrounds
+       are clipped to the box, so it needs the space rather than an offset. */
+    padding-bottom: 0.24em;
+    background-image: url("data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%20120%206'%20preserveAspectRatio='none'%3E%3Cpath%20fill='none'%20stroke='%235c5a32'%20stroke-width='1'%20stroke-linecap='round'%20d='M%200.0%203.7%20C%201.2%203.6%205.0%203.3%207.5%203.1%20C%2010.0%202.9%2012.5%202.3%2015.0%202.3%20C%2017.5%202.3%2020.0%203.3%2022.5%203.2%20C%2025.0%203.0%2027.5%201.7%2030.0%201.5%20C%2032.5%201.4%2035.0%202.0%2037.5%202.2%20C%2040.0%202.5%2042.5%203.0%2045.0%203.0%20C%2047.5%202.9%2050.0%201.8%2052.5%201.8%20C%2055.0%201.8%2057.5%202.7%2060.0%203.0%20C%2062.5%203.2%2065.0%203.5%2067.5%203.4%20C%2070.0%203.4%2072.5%202.8%2075.0%202.9%20C%2077.5%202.9%2080.0%203.5%2082.5%203.7%20C%2085.0%204.0%2087.5%204.4%2090.0%204.4%20C%2092.5%204.5%2095.0%204.0%2097.5%204.0%20C%20100.0%204.0%20102.5%204.4%20105.0%204.3%20C%20107.5%204.1%20110.0%203.3%20112.5%203.0%20C%20115.0%202.7%20118.8%202.7%20120.0%202.7'/%3E%3C/svg%3E");
+    background-repeat: no-repeat;
+    background-position: 0 100%;
+    background-size: 0% 5px;
+    transition: color 0.2s ease, background-size 0.32s cubic-bezier(0.3, 0.7, 0.3, 1);
+  }
+  .lists li a:hover {
+    color: var(--accent);
+    background-size: 100% 5px;
+  }
   .lists .sep { color: var(--faint); }
   .lists .author { color: var(--muted); }
+
+  /* ── Colophon: the bottom of the sheet ─────────────────────────────── */
+  /* The signature sits in the content column; the torn edge runs the full
+     width of the page, because it is the edge of the paper itself. */
+  .colophon {
+    flex: 0 0 auto;
+    width: 100%;
+    padding-bottom: clamp(14px, 3vw, 24px);
+  }
+  .colophon__note {
+    max-width: 700px;
+    margin: 0 auto;
+    padding: clamp(26px, 5vw, 44px) clamp(22px, 6vw, 34px) clamp(20px, 4vw, 30px) var(--gutter);
+  }
+  /* The one thing on the page written by hand rather than set — and sitting
+     a degree off level, the way a signature does. It pivots on its left edge
+     so the line stays flush with the column above it. */
+  .sig {
+    display: inline-block;
+    transform: rotate(-1.4deg);
+    transform-origin: left center;
+    margin: 0;
+    font-family: 'Kalam', 'Helvetica Neue', cursive;
+    font-weight: 300;
+    font-size: 0.95rem;
+    letter-spacing: 0.02em;
+    color: var(--faint);
+  }
+  .deckle {
+    display: block;
+    width: 100%;
+    height: 14px;
+    fill: none;
+    stroke: currentColor;
+    color: var(--tear);
+    stroke-width: 1.15;
+    opacity: 0.9;
+  }
+
+  /* ── Ink settling in: a soft rise, staggered down the page ─────────── */
+  .settle {
+    animation: settle 0.9s cubic-bezier(0.2, 0.7, 0.3, 1) both;
+    animation-delay: var(--d, 0s);
+  }
+  @keyframes settle {
+    from { opacity: 0; transform: translateY(6px); }
+    to   { opacity: 1; transform: none; }
+  }
+
+  @media (prefers-reduced-motion: reduce) {
+    .mark, .thread, .settle { animation: none !important; }
+    .mark, .thread { stroke-dashoffset: 0; }
+    .settle { opacity: 1; transform: none; }
+  }
 </style>

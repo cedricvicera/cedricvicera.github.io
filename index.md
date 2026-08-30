@@ -4,5 +4,5 @@ permalink: /
 ---
 
 <section class="about">
-  <p>I work in AI risk and governance, building infrastructure to keep agentic deployments trustworthy at scale.</p>
+  <p class="settle" style="--d: 0.2s">I support the systems behind AI agents redesigning third-party risk management.</p>
 </section>
