@@ -1,8 +1,8 @@
-// Base stylesheet. The personal-site look (paper, EB Garamond, layout) is
-// defined inline in index.md so it ships with the page; this file provides the
-// reset, sensible defaults, and the content column.
+// Base stylesheet. The personal-site look (paper, EB Garamond, the ink marks)
+// lives inline in _includes/styles.html so it ships with the page; this file
+// provides the reset, sensible defaults, and the content column.
 
-$body-bg-color: #f8f4ec; // paper — matches the inline theme as a fallback
+$body-bg-color: #f8f4ec; // paper - matches the inline theme as a fallback
 
 @import 'normalize';
 @import 'settings';
