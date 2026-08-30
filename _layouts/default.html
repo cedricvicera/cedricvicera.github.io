@@ -3,11 +3,17 @@
   {% include head.html %}
   {% include styles.html %}
   <body>
+    {% include marks.html %}
+    <div class='spine' aria-hidden='true'>{% include thread.html %}</div>
     <div class='layout'>
       {% include header.html %}
       <main class='main'>
         {{ content }}
       </main>
     </div>
+    <footer class='colophon'>
+      <div class='colophon__note'><p class='sig'>{{ site.author }}</p></div>
+      {% include deckle.html %}
+    </footer>
   </body>
 </html>

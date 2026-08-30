@@ -1,6 +1,6 @@
 <header class='header'>
   <nav class='nav'>
-    <a class='nav__item{% if page.url == "/" %} active{% endif %}' href='{{ '/' | relative_url }}'>About</a>
-    <a class='nav__item{% if page.url contains "reading" %} active{% endif %}' href='{{ '/reading/' | relative_url }}'>Reading Lists</a>
+    <a class='nav__item{% if page.url == "/" %} active{% endif %}' href='{{ '/' | relative_url }}'>About<svg class='mark rule' preserveAspectRatio='none' aria-hidden='true'><use href='#m-rule-1'/></svg></a>
+    <a class='nav__item{% if page.url contains "reading" %} active{% endif %}' href='{{ '/reading/' | relative_url }}'>Reading<svg class='mark rule' preserveAspectRatio='none' aria-hidden='true'><use href='#m-rule-2'/></svg></a>
   </nav>
 </header>

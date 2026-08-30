@@ -7,6 +7,10 @@ markdown: kramdown
 kramdown:
   input: GFM
 
+exclude:
+  - tools
+  - vendor
+
 plugins:
   - jekyll-feed
   - jekyll-seo-tag

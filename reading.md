@@ -6,7 +6,7 @@ permalink: /reading/
 <section class="reading">
   <div class="lists">
     {% for group in site.data.reading_lists %}
-    <section>
+    <section class="settle" style="--d: {{ forloop.index0 | times: 70 | plus: 150 }}ms">
       <h2>{{ group.name }}</h2>
       <ul>
         {% for book in group.books %}
