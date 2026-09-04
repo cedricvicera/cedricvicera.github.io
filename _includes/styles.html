@@ -19,6 +19,7 @@
     --thread: #b9a273;        /* the pen line down the margin */
     --mark-ink: #8f8463;      /* margin circles */
     --tear: #d2c7b1;          /* torn edge of the sheet */
+    --grass: #8f9070;         /* sage - grass along the torn edge */
 
     --gutter: clamp(38px, 8vw, 64px);
   }
@@ -213,6 +214,30 @@
     letter-spacing: 0.02em;
     color: var(--faint);
   }
+  /* Grass along the torn edge. It scales uniformly with the page, so it
+     thins out on a phone rather than crowding, and inks in a little slower
+     than the smaller marks -- it has further to grow. */
+  .grass {
+    display: block;
+    width: 100%;
+    height: auto;
+    color: var(--grass);
+    stroke-width: 0.7;
+    stroke-linecap: round;
+    opacity: 0.9;
+    animation-duration: 1.9s;
+  }
+
+  /* The mark that closes the text: a small starburst at the foot of main. */
+  .spark {
+    display: block;
+    width: 19px;
+    height: 19px;
+    color: var(--muted);
+    stroke-width: 1.15;
+    margin: clamp(42px, 7vw, 66px) 0 0;
+  }
+
   .deckle {
     display: block;
     width: 100%;

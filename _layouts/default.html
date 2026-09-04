@@ -9,10 +9,12 @@
       {% include header.html %}
       <main class='main'>
         {{ content }}
+        {% include spark.html %}
       </main>
     </div>
     <footer class='colophon'>
       <div class='colophon__note'><p class='sig'>{{ site.author }}</p></div>
+      {% include grass.html %}
       {% include deckle.html %}
     </footer>
   </body>
